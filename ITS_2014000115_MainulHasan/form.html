@@ -1,4 +1,4 @@
-<!DOCtype HTML>
+<!DOCTYPE HTML>
 
 <html>
 
@@ -11,7 +11,24 @@
 		
 		<fieldset>
 			<legend>Online Student registration</legend>
-			Full Name: <input type="text" name="fullNameText"/>
+			<label for = "fullName">Full Name: </label>
+			<input type="text" 
+				   name="fullNameText" 
+				   id ="fullName" 
+				   placeholder="e.g Mainul Hasan"
+				   tabindex="1"
+				   autofocus="autofocus"
+				   value="FTFL"
+				   onclick=alert("Hello FTFL");
+				   /><br />
+				   
+				   <input type="radio" name="sex" value="male">Male<br />
+				   <input type="radio" name="sex" value="female">Female<br />
+				   
+				   
+				   <input type="checkbox" name="vehicle" value="Bike">I have a bike<br/>
+				   <input type="checkbox" name="vehicle" value="Car">I have a car 
+				   
 		</fieldset>
 		
 	</form>
