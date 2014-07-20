@@ -2,9 +2,11 @@
 	- Avoid using this selector. Performance issue
 */
 
+/************ 
 *{
 	background-color: #FFF;
 }
+************/
 
 /* I need all the elements that have 'role' attributes 
 	and apply a rule to make the font color. */ 
@@ -46,4 +48,8 @@ b~i {
 
 #zen-summary{
 	background-color: green;
+}
+.danger{
+	color: red;
+	font-size: 26px;
 }
