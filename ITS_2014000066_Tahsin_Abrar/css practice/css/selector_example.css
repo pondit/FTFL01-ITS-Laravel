@@ -3,5 +3,18 @@
 */
 
 *{
-	background-color: green;
+	background-color: #FFF;
 }
+
+/* I need all the elements that have 'role' attributes 
+	and apply a rule to make the font color. */ 
+div[role]{
+	color: #999;
+}
+
+
+
+
+
+
+
