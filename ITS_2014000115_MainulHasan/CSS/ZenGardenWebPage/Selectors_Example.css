@@ -1,3 +1,5 @@
-*{
-background-color:red;
+
+div [role]
+{
+	background-color:yellow;
 }
