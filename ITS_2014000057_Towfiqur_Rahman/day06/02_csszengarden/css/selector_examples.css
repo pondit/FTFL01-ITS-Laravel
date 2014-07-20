@@ -2,9 +2,9 @@
 	- avoid using this selector due to performance issue
 */
 
-*{
+/**{
 	background-color: white;
-}
+}*/
 
 div[role]{
 	color: green;
@@ -12,7 +12,7 @@ div[role]{
 
 /* select all the div elements that have 'role' that has a value 'main' & apply rule to make font-color #000*/
 div[role="main"]{
-	background-color: black;
+	background-color: grey;
 }
 
 /*select all the li elements that are second child of their parents*/
@@ -35,4 +35,9 @@ footer a{
 /* select <i> that has immediate <b> tag */
 b~i{
 	background-color: orange;
+}
+
+/* id selector */
+#zen-summary{
+	background-color: purple;
 }
