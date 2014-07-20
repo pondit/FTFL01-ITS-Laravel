@@ -1,0 +1,11 @@
+*{
+	/*
+	background-color: green;
+*/
+}
+
+/* select all the div elements that have role attribute and
+apply a rule to make font color red*/
+div [role]{
+	color:red;
+}
