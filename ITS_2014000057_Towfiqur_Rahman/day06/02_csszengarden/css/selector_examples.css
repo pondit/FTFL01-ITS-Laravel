@@ -2,6 +2,10 @@
 	- avoid using this selector due to performance issue
 */
 
-*{
+/**{
 	background-color: yellowgreen;
+}*/
+
+div[role]{
+	color: yellow;
 }
