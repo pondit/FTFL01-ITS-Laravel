@@ -21,3 +21,21 @@ a:nth-child(2n+1)
 {
 	background-color:green;
 }
+
+/*select all the a that are child of footer*/
+
+footer a{
+	background-color:green;
+	}
+b~i{
+	background-color:blue;
+}
+#zen-summary
+{
+	background-color:red;
+}
+.danger
+{
+	color:red;
+	font-size:16;
+}
