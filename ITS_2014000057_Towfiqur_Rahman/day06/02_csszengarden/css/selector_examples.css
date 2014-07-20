@@ -31,3 +31,8 @@ li:nth-child(2n+1){
 footer a{
 	background-color: cyan;
 }
+
+/* select <i> that has immediate <b> tag */
+b~i{
+	background-color: orange;
+}
