@@ -3,6 +3,7 @@
 <head>
 	<title>Role of margin in html normal flow </title>
 	<style type="text/css">
+		
 		body{
 			margin:0;
 		}
@@ -15,11 +16,28 @@
 		}
 		strong{
 			background-color:orange;
-			margin-right:20px;
+			/* margin-right:20px;*/
 		}
 		span{
 			background-color:pink;
-			margin-left:-50px;
+			/*margin-left:-50px;*/
+		}
+		
+		/*
+		CSSP
+		static = no positioning
+		relative
+		absolute
+		float (clear)
+		fixed : your task
+		
+		
+		*/
+		
+		strong{
+			position:relative;
+			top:50px;
+			left:50px;
 		}
 		
 	</style>
