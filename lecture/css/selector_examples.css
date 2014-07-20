@@ -28,7 +28,6 @@ li:nth-Child(2){
 	background-color:red;
 }
 /* exercise */
-
 li:nth-Child(2n+1){
 	background-color:green;
 }
@@ -39,6 +38,13 @@ footer a{
 	background-color:green;
 }
 
+b~i{
+	background-color:blue;
+}
+
+#zen-summary{
+	background-color:green;
+}
 
 
 
