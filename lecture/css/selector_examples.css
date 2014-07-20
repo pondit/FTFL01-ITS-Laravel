@@ -1,0 +1,6 @@
+/* Universal Selector 
+	-Avoid using this selector. Performance issue
+*/
+*{
+	background-color:green;
+}
