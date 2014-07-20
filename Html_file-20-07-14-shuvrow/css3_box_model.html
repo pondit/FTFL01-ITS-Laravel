@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Working with CSS3</title>
+	<!-- Including an external css-->
+	<link rel="stylesheet" type="text/css" href="style.css" />
 	<style>
 	/*
 	css comment
@@ -10,7 +12,7 @@
 
 	selectors{
 	//rules
-
+	key:value;
 	}	
 	*/
 	span{
@@ -21,11 +23,13 @@
 		color:red;
 
 	} 
+	
 	</style>
 <head>
 	<body>
-		<h1>Hi FTFL</h1>
+		<h1>Hi <i>FTFL</i></h1>
 		<div>
+			<!-- internal css must be avoided-->
 			<strong style="background-color:blue">BATCH</strong>
 			<span>FTFL01</span>
 		</div>
