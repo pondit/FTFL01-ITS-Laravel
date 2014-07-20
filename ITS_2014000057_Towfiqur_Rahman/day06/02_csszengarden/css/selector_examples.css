@@ -2,10 +2,16 @@
 	- avoid using this selector due to performance issue
 */
 
-/**{
-	background-color: yellowgreen;
-}*/
+*{
+	background-color: white;
+}
 
 div[role]{
-	color: yellow;
+	color: green;
+}
+
+/* select all the div elements that have 'role' that has a value 'main' & apply rule to make font-color #000*/
+
+div[role="main"]{
+	background-color: black;
 }
