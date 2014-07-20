@@ -1,0 +1,10 @@
+/*Universal Selector
+ 
+ -Avoid using this selector. performance issue
+
+*/
+
+*{
+
+	background-color: cyan;
+}
