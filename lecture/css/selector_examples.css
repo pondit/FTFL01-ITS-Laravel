@@ -1,6 +1,16 @@
-/* Universal Selector 
+/* 
+http://www.w3.org/TR/selectors/#selectors
+
+Universal Selector 
 	-Avoid using this selector. Performance issue
 */
 *{
-	background-color:green;
+	background-color:#FFFFFF;
 }
+
+/* Select all the div elements that have 'role' attribute
+and apply a rule to make the font color yellow */
+
+div[role]{
+	color:#999999;
+} 
