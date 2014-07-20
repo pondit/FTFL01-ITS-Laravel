@@ -21,5 +21,17 @@ and apply a rule to make the font color #000000 */
 div[role="main"]{
 	background-color:#EEE;
 }
+/* select all the li elements 
+that are second child of their parents */
+
+li:nth-Child(2){
+	background-color:red;
+}
+
+
+
+
+
+
 
  
