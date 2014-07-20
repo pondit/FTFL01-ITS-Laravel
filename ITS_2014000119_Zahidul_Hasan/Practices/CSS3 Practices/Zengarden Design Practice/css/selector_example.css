@@ -4,10 +4,10 @@
 
 */
 
-*{
+  *{
 
 	background-color: #CCCCCC;
-}
+} 
 
 /* I need to select all the div elements that have 'role' attribute to color change */
 
@@ -54,4 +54,20 @@ background-color: grey;
 footer a{
 
 	background-color: indigo;
+}
+
+/* introducing general sibling combinator */
+
+
+
+b~i{
+
+	background-color: green;
+}
+
+/* intorducing id selectors */
+
+#zen-summary{
+
+	background-color: blue;
 }
