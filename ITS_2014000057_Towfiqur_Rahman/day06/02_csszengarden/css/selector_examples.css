@@ -1,5 +1,7 @@
-//* * is an Universal Selector */
+/* * is an Universal Selector
+	- avoid using this selector due to performance issue
+*/
 
 *{
-	background-color: red;
+	background-color: yellowgreen;
 }
