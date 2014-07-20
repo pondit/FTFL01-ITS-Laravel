@@ -41,3 +41,9 @@ b~i{
 #zen-summary{
 	background-color: purple;
 }
+
+.danger{
+	color: red;
+	font-size: 16;
+	font-weight: 800;
+}
