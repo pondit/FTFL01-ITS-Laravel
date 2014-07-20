@@ -6,5 +6,13 @@
 
 *{
 
-	background-color: cyan;
+	background-color: #CCCCCC;
 }
+
+/* I need all the div elements that have 'role' attribute to color in pink */
+
+div [role]{
+
+	color: #A9FAEE;
+}
+
