@@ -24,3 +24,11 @@ div [role='article']
 
 	color: black;
 }
+
+/* select all the li elements that are second child of their parents and their background color grey */
+
+li:nth-child(2){
+
+background-color: grey;
+
+}
