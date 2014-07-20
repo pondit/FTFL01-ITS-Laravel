@@ -37,14 +37,21 @@ background-color: grey;
 
 /* odd child background color cyan */
 
-a:nth-child(2n+1){
+/*a:nth-child(2n+1){
 
 	background-color: cyan;
-}
+} */
 
 /* even child background color cyan */
 
-a:nth-child(2n){
+/*a:nth-child(2n){
 
 	background-color: pink;
+}*/
+
+/* select all the a that are child of footer */
+
+footer a{
+
+	background-color: indigo;
 }
