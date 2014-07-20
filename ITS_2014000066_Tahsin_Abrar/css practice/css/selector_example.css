@@ -19,6 +19,12 @@ div[role="main"]{
 	background-color: #ddd;
 }
 
+/*
+Select all the li elements 
+that are second child of their parents
+*/
 
-
+li:nth-child(2){
+	background-color: red;
+}
 
