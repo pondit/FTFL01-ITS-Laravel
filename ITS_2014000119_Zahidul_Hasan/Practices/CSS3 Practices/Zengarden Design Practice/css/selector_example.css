@@ -4,11 +4,11 @@
 
 */
 
-  *{
+ /* *{
 
 	background-color: #CCCCCC;
 } 
-
+*/
 /* I need to select all the div elements that have 'role' attribute to color change */
 
 div [role]{
@@ -70,4 +70,11 @@ b~i{
 #zen-summary{
 
 	background-color: blue;
+}
+
+/* introducing class selectors */
+
+.Danger{
+
+	background-color: orange;
 }
