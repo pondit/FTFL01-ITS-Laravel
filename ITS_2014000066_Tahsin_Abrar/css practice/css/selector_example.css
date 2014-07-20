@@ -39,3 +39,11 @@ select all the a that are child of footer
 footer a{
 	background-color: yellow;
 }
+
+b~i {
+	background-color: blue;
+}
+
+#zen-summary{
+	background-color: green;
+}
