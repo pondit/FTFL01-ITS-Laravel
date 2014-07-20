@@ -25,7 +25,9 @@ li:nth-child(2n+1){
 	background-color: green;
 }
 
-/* Change backgroun-color of all the <a> that are child of footer */
+/* Change backgroun-color of all the <a> that are child of footer
+(decendant combinators introduced)
+*/
 footer a{
 	background-color: cyan;
 }
