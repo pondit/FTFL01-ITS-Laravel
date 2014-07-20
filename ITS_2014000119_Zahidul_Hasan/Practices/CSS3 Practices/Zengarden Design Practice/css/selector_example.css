@@ -9,10 +9,18 @@
 	background-color: #CCCCCC;
 }
 
-/* I need all the div elements that have 'role' attribute to color in pink */
+/* I need to select all the div elements that have 'role' attribute to color change */
 
 div [role]{
 
 	color: #A9FAEE;
 }
 
+/* I need to select all the div elements that have 'role' attribute has a value 'article' and to make font color in black */
+
+div [role='article']
+
+{
+
+	color: black;
+}
