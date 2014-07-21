@@ -109,11 +109,12 @@
 	
 	//declaration of a function
 	
-	function addTwoumbers(num1,num2){		
-		var sum = num1+num2;
+	function addTwoumbers(){		
+		//var sum = num1+num2;
+		var sum = arguments[0]+arguments[1];
 		return sum;
 	}
 	//function call
-	var result = addTwoumbers(2,3);
+	var result = addTwoumbers(4,2);
 	console.log(result);
 </script>Hello World
