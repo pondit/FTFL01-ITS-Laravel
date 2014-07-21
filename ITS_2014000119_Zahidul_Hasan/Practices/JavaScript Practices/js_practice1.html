@@ -160,9 +160,14 @@
     console.log(addNumbers(5,6));
     console.log(addNumbers()); // Show output NaN as arguments array elements are initially undefined
     
+   
+    //Introducing anonymous function and can be stored in variable
+    var addThreeNumbers = function(){
+        
+        return arguments[0]+arguments[1]+arguments[2];
+    }
     
-    
-    
+    console.log(addThreeNumbers(5,6,7));
     
     
     
