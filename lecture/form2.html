@@ -2,38 +2,56 @@
 <html>
 <head>
 	<title>HTML Form</title>
+	<style>
+		ul#regForm{
+			list-style-type: none;
+		}
+	</style>
 </head>
 
 <body>
 	<form method="get">
 		<fieldset>
 			<legend>Online Student Registration</legend>
-			<label for="fullName">Full Name :</label>
-			<input type="text" 
-				   name="txtFullName" 
-				   id="fullName"
-				   placeholder="e.g Zahidul Hasan"
-				   tabindex="1"
-				   autofocus="autofocus"				   
-				   value="FTFL" />
-				   
-			<label for="email">Email:</label>
-			<input type="text" 
-				   name="txtEmail" 
-				   id="email"
-				   placeholder="e.g amorasobai@pondit.com"
-				   />
-			<label for="password">Password:</label>
-			<input type="text" 
-				   name="txtPassword" 
-				   id="password"			   
-				   />
-			<label for="confirmPassword">Confirm Password:</label>
-			<input type="password" 
-				   name="txtConfirmPassword" 
-				   id="confirmPassword"			   
-				   />
-			<button>Save</button>
+		<ul id="regForm">
+			<li>
+				<label for="fullName">Full Name :</label>
+				<input type="text" 
+					   name="txtFullName" 
+					   id="fullName"
+					   placeholder="e.g Zahidul Hasan"
+					   tabindex="1"
+					   autofocus="autofocus"				   
+					   value="FTFL" />
+			</li>	   
+			
+			<li>
+				<label for="email">Email:</label>
+				<input type="text" 
+					   name="txtEmail" 
+					   id="email"
+					   placeholder="e.g amorasobai@pondit.com"
+					   />
+			</li>
+			
+			<li>
+				<label for="password">Password:</label>
+				<input type="text" 
+					   name="txtPassword" 
+					   id="password"			   
+					   />
+			</li>
+			
+			<li>
+				<label for="confirmPassword">Confirm Password:</label>
+				<input type="password" 
+					   name="txtConfirmPassword" 
+					   id="confirmPassword"			   
+					   />
+			</li>
+			
+			<li><button>Save</button></li>
+		</ul>
 		</fieldset>
 	</form>
 </body>
