@@ -17,8 +17,8 @@
     
     //defining variable
     
-    var aVariable= 121.21;
-    anotherVariable= 222.22;
+    var aVariable= 12;
+    anotherVariable= 10;
     var aStringVariable= 'Hello FTFL';
     var anotherStringVariable= "111";
     var aBooleanVariable = true;
@@ -86,8 +86,12 @@
     //Operators introduction
     
     console.log("jahangir" in window); // using in operator to check whether the variable is in window object
-    
-    
+    console.log("aVariable" in window);
+ 
+    //'+' is an overloaded operator which will be used as arithmatic and string operator... 
+    //number + string will be treated as string and concetanation will be used
+    console.log(aVariable+anotherVariable); //use of plus as arithmatic operator
+    console.log(aStringVariable+anotherStringVariable); //use of plus as string operator
     
     
 </script>
