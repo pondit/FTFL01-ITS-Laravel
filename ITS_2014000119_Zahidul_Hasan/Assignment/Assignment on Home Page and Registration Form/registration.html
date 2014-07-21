@@ -91,7 +91,61 @@
 			<label>Your Feedback Score : </label>
 			<input type="number" name="feedback" form="regForm" value="5" min="1" max="5">
 		</fieldset>
+                    
+                 <fieldset>
+			<legend>City</legend>   
+                        
+                        <select name="city">
+                        
+                        <option selected="selected">Dhaka</option>
+                        <option>Chittagong</option>
+                        <option>Sylhet</option>
+   
+                        </select>
+                 </fieldset>
                 
+                 <fieldset>
+			<legend>Training Center</legend>   
+                        
+                        <select name="trainingCenter">
+                        
+                        <optgroup id="opt1" label="BITM">
+                        <option>Lab1</option>
+                        <option>Lab2</option>
+                        </optgroup>
+                        
+                        <optgroup id="opt2" label="BCC">
+                        <option>Lab3</option>
+                        <option>Lab4</option>
+                        <option>Lab5</option>
+                        </optgroup>
+                        
+                        </select>
+                        
+                 </fieldset>
+                    
+                    
+                    <fieldset>
+			<legend>Preferred Track</legend>
+                        
+                        <select name="trackList" multiple="multiple">
+                        <option value="ITS" selected="selected">ITS</option>
+                        <option value="ITES">ITES</option>
+                        <option value="ITSS">ITSS</option>
+                        <option value="MGT">MGT</option>
+   
+                        </select>
+                        
+                    </fieldset>
+                    
+                    
+                    <fieldset>
+			<legend>Profile Pic</legend>
+                        <input type="hidden" name="salaryAmount" value="100000" />
+                        <input type="image" alt="pp" name="profilePic" height=200 width=200 src="images/medal.jpg" />
+                            
+                    </fieldset>
+                        
                 
 			<input type="reset" name="resetButton" 
 								 value="Reset" 
