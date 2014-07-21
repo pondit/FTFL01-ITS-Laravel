@@ -83,13 +83,29 @@
 	console.log(Number('afds'));
 	console.log(Number('afds123'));
 	console.log(Number('123afds'));
-	console.log(Number('123'));
+	console.log(Number('123.12'));
 	
 	console.log(parseInt('afds'));
 	console.log(parseInt('afds123'));
 	console.log(parseInt('123afds'));
-	console.log(parseInt('123'));
+	console.log(parseInt('123.72'));
 	
+	var aVar; //undefined = false
+	var aVar = 0;//false
+	var aVar = null;//false
+	var aVar = '';//false
+	var aVar = false;
+	
+	var aVar = 'string';//true
+	var aVar = 123;//true	
+	var aVar = '0'; //true	
+	var aVar = ' ';//true
+	
+	if(aVar){
+		console.log('I am treated as true');
+	}else{
+		console.log('I am treated as false');
+	}
 	
 	
 	
