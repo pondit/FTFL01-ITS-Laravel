@@ -87,18 +87,114 @@ label {display:block;
 	name="addressText"
 	maxlength="180"
 	tabindex="1"
-	/><label>Email Address :</label>
-<input type="text"
-	size="30"
-	maxlength="100"
-	tabindex="1"/></br>
-<br><label>District:<label>
-<input type="text" 
-	size="30"
-	name="addressText"
-	maxlength="100"
-	tabindex="1"
-	/></br>
+	/>
+	/br>
+<div>
+<label>City:</label>
+<select>
+  <option>Dhaka</option>
+  <option>Natore</option>
+  <option>Rajshahi</option>
+  <option>Komilla</option>
+</select>
+</div>
+<div>
+<label>Zip:</label>
+<input type="text"/>
+</div>
+
+<div>
+<label>Country:</label>
+<select>
+  <option>Bangladesh</option>
+  <option>USA</option>
+  <option>UK</option>
+  <option>Canada</option>
+</select>
+</div>
+
+			<fieldset>
+				<legend>Contact Information</legend>
+				
+				<div>
+					<label for="idHomePhone">Phone(Home): </label>
+					<input type="tel" placeholder="Phone"
+									   size="30"
+									   id="idHomePhone" 
+									   name="nameHomePhone"
+									   maxlength="300"
+									   tabindex="8"
+									   />
+				</div>
+						<div>
+					<label for="idWorkPhone">Phone(Work): </label>
+					<input type="tel" placeholder="Phone"
+									   size="30"
+									   id="idWorkPhone" 
+									   name="nameWorkPhone"
+									   maxlength="300"
+									   tabindex="9"
+									   />
+				</div>
+				
+								<div>
+					<label for="idMobileNumber">Mobile Number: </label>
+					<input type="tel" placeholder="Mobile"
+									   size="30"
+									   id="idMobileNumber" 
+									   name="nameMobileNumber"
+									   maxlength="300"
+									   tabindex="10"
+									   />
+				</div>
+				
+								<div>
+					<label for="idEmail">E-mail: </label>
+					<input type="email" placeholder="E-mail"
+									   size="30"
+									   id="idEmail" 
+									   name="nameEmail"
+									   maxlength="300"
+									   tabindex="11"
+									   />
+				</div>
+				
+								<div>
+					<label for="idFacebook">Facebook: </label>
+					<input type="url" placeholder="Facebook"
+									   size="30"
+									   id="idFacebook" 
+									   name="nameFacebook"
+									   maxlength="300"
+									   tabindex="12"
+									   />
+				</div>
+</fieldset>
+
+<div>
+<label>Age:</label>
+<input type="Number"/>
+<input type="Number"/>
+<input type="Number"/>
+</div>
+<div>
+<label>Date of Birth:</label>
+<input type="Number"/>
+<input type="Number"/>
+<input type="Number"/>
+</div>
+
+<div>
+<label>Birth Place:</label>
+<input type="text"/>
+</div>
+
+<div>
+<label>Type of Birth:</label>
+<input type="radio"name="typeOfBirth"value="normal"/>Normal
+<input type="radio"name="typeOfBirth"value="scessarian"/>Scessarion
+<input type="radio"name="typeOfBirth"value="other"/>Other
+</div>
 
 </fieldset>
 <fieldset><legend><h2>Educational Qualification</h2></legend>
@@ -126,8 +222,14 @@ label {display:block;
 
 
 
+
 </Field>
+<fieldset>
+		<button> Submit </button>
+</fieldset>
+
 </form>
+
 
 
 
