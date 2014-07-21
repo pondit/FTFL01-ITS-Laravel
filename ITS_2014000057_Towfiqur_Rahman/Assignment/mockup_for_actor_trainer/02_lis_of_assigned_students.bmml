@@ -129,9 +129,9 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="35" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="36" y="192" w="-1" h="-1" measuredW="58" measuredH="24" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::BreadCrumbs" x="36" y="192" w="-1" h="-1" measuredW="186" measuredH="24" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Home</text>
+        <text>Home%2C%20Assigned%20students%27%20list</text>
       </controlProperties>
     </control>
     <control controlID="45" controlTypeID="com.balsamiq.mockups::SearchBox" x="50" y="603" w="89" h="-1" measuredW="120" measuredH="26" zOrder="12" locked="false" isInGroup="-1">
