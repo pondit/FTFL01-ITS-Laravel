@@ -93,4 +93,21 @@
 	console.log(parseInt('afds123'));
 	console.log(parseInt('123.12'));
 
+	var aVar = false; //false
+	var aVar = 0; //false
+	var aVar; //false
+	var aVar = null; //false
+	var aVar = ''; //false
+
+	var aVar = 'String'; //true
+	var aVar = 123; //true
+	var aVar = '0'; //true
+	var aVar = " "; //true
+
+	if (aVar) {
+		console.log('I am treated as true');
+	}else{
+		console.log('I am treated as flse');
+	}
+
 </script>Hello World
