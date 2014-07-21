@@ -148,6 +148,10 @@
         return sum;
     }
     
+    /* if we use var variable name then the variable is local to function 
+     but if not decalared with var just only variable name then its global variable
+      */
+    
     
     //function call
     var result = addTwoNumbers(4,2);
@@ -169,12 +173,13 @@
     
     console.log(addThreeNumbers(5,6,7));
     
-    //self executing function
+    //self executing function 
     
    console.log ( (function(){
         
         return arguments[0]+arguments[1]+arguments[2];
     } ) (1,5,6));
+    
     
     
     
