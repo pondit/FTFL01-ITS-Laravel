@@ -3,23 +3,9 @@
 <head>
 	<title>HTML Form</title>
 	<style>
-		fieldset{
-			width:50%;
-			margin:auto;
-		}
-		legend{
-			border:1px solid #ccc;
-			background-color:#eecc00;
-		}
-		ul#regForm{
-			list-style-type: none;
+		div{
 			background-color:green;
 			padding:4px;
-			
-		}
-		ul li{
-			padding:4px;
-			
 		}
 		li{
 			background-color:yellow;
@@ -39,13 +25,13 @@
 			float:left;
 			
 		}
-		.clearfix{
+		/*.clearfix{
 			float:none;
 			clear:both;
 		}
-		
-		ul::after{
-			content:"hello";
+		*/
+		div::after{
+			content:" ";
 			display:block;
 		}
 		
@@ -54,10 +40,9 @@
 
 <body>
 	<form method="get">
-		<fieldset>
-			<legend>Online Student Registration</legend>
-		<ul id="regForm">
-			<li>
+		
+		<div>
+			<div>
 				<label for="fullName">Full Name :</label>
 				<input type="text" 
 					   name="txtFullName" 
@@ -66,38 +51,38 @@
 					   tabindex="1"
 					   autofocus="autofocus"				   
 					   value="FTFL" />
-			</li>	   
+			</div>	   
 			
-			<li>
+			<div>
 				<label for="email">Email:</label>
 				<input type="text" 
 					   name="txtEmail" 
 					   id="email"
 					   placeholder="e.g amorasobai@pondit.com"
 					   />
-			</li>
+			</div>
 			
-			<li>
+			<div>
 				<label for="password">Password:</label>
 				<input type="text" 
 					   name="txtPassword" 
 					   id="password"			   
 					   />
-			</li>
+			</div>
 			
-			<li>
+			<div>
 				<label for="confirmPassword">Confirm Password:</label>
 				<input type="password" 
 					   name="txtConfirmPassword" 
 					   id="confirmPassword"			   
 					   />
-			</li>
+			</div>
 			
-			<li><button>Save</button></li>
+			<div><button>Save</button></div>
 			
-		</ul>
+		</div>
 		
-		</fieldset>
+		
 	</form>
 </body>
 </html>

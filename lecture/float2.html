@@ -20,6 +20,15 @@ div:nth-Child(2n+1){
 #div-2{
 	clear:both;
 }
+
+div::after{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	height:0;
+	font-size:0;	
+}
 </style>
 </head>
 
