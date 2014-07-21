@@ -107,8 +107,7 @@
 		console.log('I am treated as false');
 	}
 	
-	//declaration of a function
-	
+	//declaration of a function	
 	function addTwoumbers(){		
 		//var sum = num1+num2;
 		var sum = arguments[0]+arguments[1];
@@ -117,4 +116,19 @@
 	//function call
 	var result = addTwoumbers(4,2);
 	console.log(result);
+	
+	var addNumbers = addTwoumbers;
+	console.log(addNumbers(5,6));
+	
+	var addThreeNumbers = function(){
+		return arguments[0] + arguments[1] + arguments[2];
+	}
+	console.log(addThreeNumbers(5,6,7));
+	//self executing function
+	console.log((function(){
+		return arguments[0] 
+		+ arguments[1] 
+		+ arguments[2];
+	})(2,3,4,5));
+	
 </script>Hello World
