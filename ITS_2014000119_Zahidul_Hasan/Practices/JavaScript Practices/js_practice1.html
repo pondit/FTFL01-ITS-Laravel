@@ -115,6 +115,27 @@
     console.log(parseInt('asda123'));
     console.log(parseInt('123.12'));
     
+    var aVar= 'string'; //true
+    var aVar= 123; //true
+    var aVar= 0; //false
+    var aVar ='0' //true
+    var aVar= null; //false
+    var aVar = ''; //false
+    var aVar = ' '//true
+    
+    
+    // undefined,number 0, null, emptystring will treated as false
+    
+    if(aVar){
+        
+        console.log("i am True");
+    }
+    
+    else
+    {
+        console.log("i am False");
+        
+    }
 </script>
 
 hello world
