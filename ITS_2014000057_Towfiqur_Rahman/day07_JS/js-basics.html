@@ -112,7 +112,7 @@
 
 	//declaration of a function
 	function addTwoNumbers(){
-		var sum = arguments[0] + arguments[1]; //arguments by default undefined
+		sum = arguments[0] + arguments[1]; //arguments by default undefined
 		return sum;
 	}
 
@@ -132,5 +132,19 @@
 	console.log((function(){
 		return arguments[0] + arguments[1] + arguments[2];
 	}) (2,3,4,5));
+
+	console.log(sum);
+
+	//Javascript closures (function within function)
+	function add(){
+		var counter = 0;
+
+		function plus(){
+			counter += 1;
+		}
+		plus();
+		return counter;
+	}
+	console.log(add());
 
 </script>Hello World
