@@ -142,15 +142,15 @@
     
     //declaration of a function
 
-    function addTwoNumbers(num1,num2){
+    function addTwoNumbers(){
         
-        var sum = 2+3;
+        var sum = arguments[0]+arguments[1]; //Introducing argument built in array
         return sum;
     }
     
     
     //function call
-    var result = addTwoNumbers(2,3);
+    var result = addTwoNumbers(4,2);
     
     console.log(result);
     
