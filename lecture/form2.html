@@ -13,15 +13,37 @@
 		}
 		ul#regForm{
 			list-style-type: none;
+			background-color:green;
+			padding:4px;
+			
 		}
 		ul li{
 			padding:4px;
+			
+		}
+		li{
+			background-color:yellow;
+			float:left;
+			width:90%;
 		}
 		label{			
 			float:left;
-			width:25%;
+			width:45%;			
+		}
+		input{
+			float:left;
+			width:45%;			
+		}
+
+		button{
+			float:left;
 			
 		}
+		.clearfix{
+			float:none;
+			clear:both;
+		}
+		
 	</style>
 </head>
 
@@ -67,7 +89,9 @@
 			</li>
 			
 			<li><button>Save</button></li>
+			<li class="clearfix"></li>
 		</ul>
+		
 		</fieldset>
 	</form>
 </body>
