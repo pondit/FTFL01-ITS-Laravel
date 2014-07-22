@@ -315,6 +315,30 @@
     //objects are called as an associative array if key: value pair is given for properties
     console.log(trainer['name']);
     
+  
+    //object literal and object as an associative array another example
+    
+    var student = {
+        name: 'zahid',
+        id:'ITS2014000119',
+        email:'zahid.riad@gmail.com',
+        tools: {
+            
+            laptop: false,
+            desktop:{
+                
+                monitor:'20inch',
+                cpu: 'i5'
+            }
+            
+            
+        }
+    };
+    
+    
+    console.log(student.tools.desktop.monitor);
+    console.log(student['tools']['desktop']['monitor']);
+    
 </script>
 
 hello world
