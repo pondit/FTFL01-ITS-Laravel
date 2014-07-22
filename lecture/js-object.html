@@ -61,10 +61,17 @@
 	console.log(mycar2.make);
 	console.log(mycar2.drive());
 	
-	
-	// Defining Object using Object.create()
-	
-	
+	//Defining Object using Object.create()
+	 var Person = {};	 
+	 
+	 var Person = {
+		kind: 'human'
+	 }	 
+	 
+	 var sajia = Object.create(Person, {age:{value:13} });
+	 console.log(sajia.kind);
+	 console.log(sajia.age);
+
 	
 	
 	
