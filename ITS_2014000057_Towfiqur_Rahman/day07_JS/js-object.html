@@ -3,4 +3,19 @@
 	//defining an Object using object constructor
 	var car = new Object();
 
+		//setting property
+		car.name = 'Audi';
+		car.wheel = 4;
+
+		//setting method
+		car.driver = function()
+		{
+			console.log('I am driveing');
+			return "Towfiq";
+		}
+
+	//using car object
+	console.log(car.wheel);
+	console.log(car.driver());	
+
 </script>
