@@ -51,7 +51,19 @@
 		}
 	}
 
-	console.log(student.tools.desktop.monitor);
-	console.log(student['tools']['desktop']['monitor']);
+	console.log(student.tools.desktop.monitor); //17inch
+	console.log(student['tools']['desktop']['monitor']); //17inch
+
+	//defining object using a constructor function
+	function cars(make, model, year){
+		this.make = make;
+		this.model = model;
+		this.year = year;
+	}
+
+	var myCar = new cars('Eagle', 'Talon TSi', 19900);
+
+	console.log(typeof myCar);
+	console.log(myCar.make);
 
 </script>
