@@ -55,15 +55,30 @@
 	console.log(student['tools']['desktop']['monitor']); //17inch
 
 	//defining object using a constructor function
-	function cars(make, model, year){
+	function Cars(make, model, year){
 		this.make = make;
 		this.model = model;
 		this.year = year;
+		this.drive = drive;
+
+		//defining object method intrnally
+		// this.drive = function(){
+		// 	return 'I am driving '+this.make;
+		// }
 	}
 
-	var myCar = new cars('Eagle', 'Talon TSi', 19900);
+	// defining object method externally
+	function drive(){
+		return 'I am driving '+this.make;
+	}
+
+	var myCar1 = new Cars('Eagle', 'Talon TSi', 1990);
+	var myCar2 = new Cars('Mazda', 'Miata', 1920);
 
 	console.log(typeof myCar);
-	console.log(myCar.make);
+	console.log(myCar1.make);
+	console.log(myCar2.make);
+	console.log(myCar1.drive());
+	console.log(myCar2.drive());
 
 </script>
