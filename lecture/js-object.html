@@ -49,13 +49,11 @@
 		  this.make = make;
 		  this.model = model;
 		  this.year = year;
-		  this.drive = drive;
+		  this.drive = function (){
+			return "I am driving "+this.make;
+		  }
 	}
 	
-	//defining object method  externally
-	function drive(){
-			return "I am driving "+this.make;
-	}
 	
 	
 	var mycar1 = new Cars("Eagle", "Talon TSi", 1993);
