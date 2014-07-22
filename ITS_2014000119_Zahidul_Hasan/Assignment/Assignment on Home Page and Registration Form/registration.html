@@ -27,7 +27,7 @@
             
             <div class="pageWrapper">
 		<h1>Registration Form</h1>
-		<form action="#" method="GET" id="regForm">
+		<form action="#" method="GET" id="regForm" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
 			<fieldset>
 				<legend>Personal Information</legend>
 				<label for="firstName">First Name: </label>
@@ -89,8 +89,15 @@
 		<fieldset>
 			<legend>Feedback </legend>
 			<label>Your Feedback Score : </label>
-			<input type="number" name="feedback" form="regForm" value="5" min="1" max="5">
+			<input type="number" name="feedback" form="regForm" value="5" min="1" max="5">                                       
 		</fieldset>
+                    
+                <fieldset>
+                    <legend>Evaluation Result</legend>
+                    0 <input type="range" id="a" value="50"> 50 + <input type="number" id="b" value="50">=
+                    <output name="x" for="a b"></output>
+                    
+                </fieldset>
                     
                  <fieldset>
 			<legend>City</legend>   
@@ -147,14 +154,27 @@
                     </fieldset>
                         
                 
-			<input type="reset" name="resetButton" 
-								 value="Reset" 
-								 tabindex="2"/>
+			
+                        <!-- keygen creation -->
+                        Username: <input type="text" name="usr_name">
+                        Encryption: <keygen name="security">
+                    
+                    
+                    
+                        <input type="reset" name="resetButton" value="Reset" tabindex="2"/>
+								 
                         
-                        <input type="submit" name="submitButton" 
-								 value="Submit" 
-								 tabindex="2"/>
+                        <input type="submit" name="submitButton" value="Submit"  tabindex="2"/>
+                        
+								
+								 
+                        
+                        
+                        
             </form>
+                
+                
+                
                 
                 <footer>
                         Footer
