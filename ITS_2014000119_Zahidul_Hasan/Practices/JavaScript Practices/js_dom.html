@@ -71,18 +71,26 @@
         
         
         var zenSummary = document.getElementById('zen-summary'); // introducing get elements by id
+       // console.log(zenSummary.innerHTML);
+        
+        //zenSummary.innerHTML = "<b> Hello, I have replaced you. </b>"; 
+      //  zenSummary.setAttribute('style', 'background-color :red'); //set attribute in elements with zen-summary id
+        
+        
+       //creating a ul which contains each abbr using innerHTML in each li
+       
+        var strUl = "<ul>";
+        for(i=0;i<total;i++){
+        strUl +="<li>"+allABBR[i].innerHTML+"</li>";
+        }
+        strUl += "</ul>";
+        
+        zenSummary.innerHTML = strUl;
         console.log(zenSummary.innerHTML);
         
-        zenSummary.innerHTML = "<b> Hello, I have replaced you. </b>"; 
-        zenSummary.setAttribute('style', 'background-color :red'); //set attribute in elements with zen-summary id
-        
-        
-        
-        
-        
-        
-        
-        
+       //----------------------------------------------------------------
+       
+       
         
         
         
