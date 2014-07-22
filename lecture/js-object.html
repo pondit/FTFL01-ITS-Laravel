@@ -62,13 +62,14 @@
 	console.log(mycar2.drive());
 	
 	//Defining Object using Object.create()
-	 var Person = {};	 
+	 //var Person = {};	 
 	 
 	 var Person = {
-		kind: 'human'
+		kind: 'human',		
 	 }	 
 	 
-	 var sajia = Object.create(Person, {age:{value:13} });
+	 var sajia = Object.create(Person, 
+							{age:{value:23}});
 	 console.log(sajia.kind);
 	 console.log(sajia.age);
 
