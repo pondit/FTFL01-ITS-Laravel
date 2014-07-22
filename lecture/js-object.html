@@ -10,4 +10,37 @@
 	//using the car object
 	console.log(Car.wheel);
 	console.log(Car.drive());
+	console.log(typeof Car);
+	//Object Literal
+	
+	//var fruits = {};
+	var fruits = {
+		name :'apple',
+		color:'red',
+		taste:'Sweet',
+		
+		satisfy:function(){
+			console.log('Satisfying Hunger');
+		}		
+	};
+	console.log(typeof fruits);
+	console.log(fruits.name);
+	console.log(fruits.satisfy());
+	
+	var student = {
+		name:'bappa',
+		id:'FTFL007',
+		email:'bappa@ftfl.com',
+		tools:{
+			laptop:false,
+			desktop:{
+				monitor:'17inch',
+				cpu:'Cori5'
+			}
+		}
+	}
+	
+	console.log(student.tools.desktop.monitor);
+	console.log(student['tools']['desktop']['monitor']);
+	
 </script>
