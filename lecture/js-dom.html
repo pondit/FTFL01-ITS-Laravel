@@ -190,18 +190,25 @@
 		var alABBR = 
 		document.getElementsByTagName('abbr');
 		var total = alABBR.length;
+		var strUl = "<ul>";
 		for(i=0;i<total;i++){
 			//console.log(alABBR[i].innerHTML);
 			//console.log(alABBR[i].nodeType);
 			//console.log(alABBR[i].firstChild.nodeValue);
-			console.log(alABBR[i].childNodes[0].nodeValue);
+			//console.log(alABBR[i].childNodes[0].nodeValue);
+			strUl += "<li>"+alABBR[i].innerHTML+"</li>";
 		}
-		
+		strUl += "</ul>";
+			
 		var zenSummary = document.getElementById('zen-summary');
 		console.log(zenSummary.innerHTML);
-		zenSummary.innerHTML = "<b>Hello, I have replaced you.</b>";
-		zenSummary.setAttribute('style','background-color:red');
-		zenSummary.setAttribute('style','display:none');
+		zenSummary.innerHTML += strUl;
+		//zenSummary.innerHTML = "<b>Hello, I have replaced you.</b>";
+		//zenSummary.setAttribute('style','background-color:red');
+		//zenSummary.setAttribute('style','display:none');
+		
+		
+		
 	}catch(e){
 		console.log(e.message);
 	}
