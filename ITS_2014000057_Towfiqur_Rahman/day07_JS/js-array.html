@@ -4,9 +4,12 @@
 	var anArray = new Array('apple',
 							'banana',
 							'grape');
-	var anoArr = new Array(2,3,5,6);
-	var aDiffArr = new Array(5); //single element refers to array length
+	var anoArr = new Array(2,3,'car',6);
+	var aDiffArr = new Array(5); //single parameter refers to array length
 	console.log(anArray);
+
+	//assigning values to array
+	anoArr[6] = "I am on 7th position";
 
 	//access an array element
 	console.log(anArray[1]);
@@ -18,5 +21,10 @@
 	console.log(anoArr.length);
 	console.log(aDiffArr); //No element
 	console.log(aDiffArr.length); //5
+
+	//single valued array
+	var aSingleValArr = new Array(1);
+	aSingleValArr[0] = "Piash: this is only element of a single valued array";
+	console.log(aSingleValArr);
 
 </script>
