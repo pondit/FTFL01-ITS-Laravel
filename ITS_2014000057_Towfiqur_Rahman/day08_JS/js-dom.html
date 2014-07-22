@@ -198,7 +198,12 @@
 	;(function(){
 		try{
 			var allABBR = window.document.getElementsByTagName('abbr');
-			console.log(allABBR);
+
+			var total = allABBR.length;
+			for(i=0;i<total;i++){
+				// console.log(allABBR[i].innerHTML);
+				console.log(allABBR[i]);
+			}
 		}catch(e){
 			console.log(e.message);
 		}
