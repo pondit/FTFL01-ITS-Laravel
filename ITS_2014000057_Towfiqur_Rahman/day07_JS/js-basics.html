@@ -158,4 +158,14 @@
 	;(function(){alert('hello')})();
 	console.log(aSampleFunction());
 
+	//sample closures example
+	function init () {
+	 	var name = "Mozilla" //name is a location variable created by init
+	 	function displayName(){ //displayName is the inner function, a closure
+	 		alert(name); //displayName uses variable declared in parent function
+	 	}
+	 	displayName();
+	 }
+	 init();
+
 </script>Hello World
