@@ -1,12 +1,16 @@
 <script>
-	alert(this); //this refers to window
-	console.log(this); //this refers to window
+	//alert(this); //this refers to window
+	console.log(this); //window
 
 	var ftfl = {
 		towfiq: function(){
-			return this;
+			return this; //object
 		}
 	};
 
-	console.log(ftfl.towfiq()); //a
+	console.log(ftfl.towfiq()); //calling as an object method
+	console.log(ftfl['towfiq']()); //calling object method as its an associative array
+
+	var aFTFL = ftfl.towfiq;
+	console.log(aFTFL()); //windows
 </script>
