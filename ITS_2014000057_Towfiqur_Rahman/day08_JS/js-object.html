@@ -82,6 +82,16 @@
 	console.log(myCar1.drive());
 	console.log(myCar2.drive());
 
-	//Defining Object using Object.create() method
+	//Defining Object using Object.create()
+	//(inheritance concept)
+	var aObj = {};
+
+	var Person = {
+		kind: 'human'
+	}
+
+	var sajia = Object.create(Person, {age:{value:13}});
+	console.log(sajia.kind);
+	console.log(sajia.age);
 
 </script>
