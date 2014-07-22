@@ -339,6 +339,35 @@
     console.log(student.tools.desktop.monitor);
     console.log(student['tools']['desktop']['monitor']);
     
+    
+    //defining object using a constructor function
+    
+    function CarsDetails(make,model,year){
+        
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.drive = drive;
+    }
+    
+    //defining object method externally
+    function drive(){
+            return "I am driving " + this.make + " "+ this.model;
+        }
+    
+    var mycar1 = new CarsDetails("Eagle","Talon TSi",1990);
+    var mycar2 = new CarsDetails("Mazda","Miata",1980);
+    
+    console.log(typeof mycar1);
+    console.log(mycar1.make);
+    console.log(typeof mycar2);
+    console.log(mycar2.make);
+    console.log(mycar1.drive());
+    console.log(mycar2.drive());
+    
+    
+    
+    
 </script>
 
 hello world
