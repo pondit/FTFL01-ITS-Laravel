@@ -204,6 +204,140 @@
     
     
     
+    //another closure example
+    function init() {
+    var name = "Mozilla"; // name is a local variable created by init
+    function displayName() { // displayName() is the inner function, a closure
+        alert (name); // displayName() uses variable declared in the parent function    
+    }
+    displayName();    
+    }
+    init();
+    
+    
+    //function constructor
+    
+    var func = new Function("x",
+                            "y",
+                            "z",
+                            "return x*y*z"
+                             );
+                     
+     console.log(func(2,3,4));
+     
+     //function literal
+     
+     var addFourNumbers = function(){
+        
+        return arguments[0]+arguments[1]+arguments[2]+arguments[3];
+    };  
+    console.log(addFourNumbers(5,6,7,8));
+    
+    //introducing defining array in java script
+    
+    var anArray = new Array('apple',
+                            'banana',
+                            'grape');
+            
+                            
+                    
+     console.log(anArray); //output the array items list
+
+    //access an array element
+    
+    console.log(anArray[1]);
+    
+    //array length 
+    console.log(anArray.length);
+    
+    var anoArr = new Array(2,3,'car'); //number and string both can be stored in same array
+    console.log(anoArr);
+    console.log(anoArr.length);
+    
+    var aDiffArr =new Array(5); //Array with single number element will be treated as array length
+    console.log(aDiffArr); //array elements will be undefined
+    console.log(aDiffArr.length); 
+    
+    aDiffArr[2]= "zess"; //accessing array index 2 and change undefined value with zess
+    console.log(aDiffArr); //[undefined,undefined,zess,undefined,undefined]
+    
+    //Array is an object type
+    console.log(typeof aDiffArr);
+    
+    //Array with single element
+    var anArrLiteral =['a'];
+    console.log(anArrLiteral);
+    
+    //array literal
+    var car = ['sedan','ferari'];
+    
+    //multiple array
+    var fruit = ['apple',['green','red'],'grape'];
+    console.log(fruit[1][1]); //output is red
+    
+    console.log(fruit[0][1]);// treating apple as an array and showing its second element p
+    
+    
+    //defining an object in java script
+    
+    var Cars = new Object();
+    Cars.name = 'Audi';
+    Cars.wheel = 4;
+    Cars.drive = function (){
+                     console.log("I am driving");
+                     return "zahid";
+                 }
+    
+    //using the Cars object
+    console.log(Cars.wheel);
+    console.log(Cars.drive());
+    
+    //object literal
+    
+    var fruits = {};
+    console.log(typeof fruits);
+    
+    //object literal
+    var trainer = {
+         name: 'rusdid',
+         track: 'php',
+         
+         teach: function(){
+             console.log('teaching FTFLs');
+         }
+        
+    };
+    
+    console.log(trainer.name);
+    console.log(trainer.track);
+    console.log(trainer.teach());
+    
+    //objects are called as an associative array if key: value pair is given for properties
+    console.log(trainer['name']);
+    
+  
+    //object literal and object as an associative array another example
+    
+    var student = {
+        name: 'zahid',
+        id:'ITS2014000119',
+        email:'zahid.riad@gmail.com',
+        tools: {
+            
+            laptop: false,
+            desktop:{
+                
+                monitor:'20inch',
+                cpu: 'i5'
+            }
+            
+            
+        }
+    };
+    
+    
+    console.log(student.tools.desktop.monitor);
+    console.log(student['tools']['desktop']['monitor']);
     
 </script>
 
