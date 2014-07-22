@@ -374,11 +374,16 @@
     
     var person ={                         //initial step to inheritence in js
         kind: 'human'
-    }
+    };
     
-    var zahid = object.create(person);
+    var zahid = Object.create(person);
     console.log(zahid.kind);
     
+    //object riad will use person kind property and also age property of riad object
+    //inheritence example
+    var riad = Object.create(person, {age:{ value : 13 } }); 
+    console.log(riad.kind);
+    console.log(riad.age);
     
     
 </script>
