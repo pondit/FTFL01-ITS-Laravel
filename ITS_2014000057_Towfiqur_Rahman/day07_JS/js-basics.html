@@ -169,12 +169,18 @@
 	 }
 	 init();
 
-	 //function constructor
+	 //function constructor (to make function dynamically)
 	var func = new Function("x",
 							"y",
 							"z",
 							"return x*y*z"
 							);
-	console.log(func(2,3,4));	 
+	console.log(func(2,3,4));
+
+	//same as
+
+	// function func(x,y,z){
+	// 	return x*y*z;
+	// }	 
 
 </script>Hello World
