@@ -1,0 +1,12 @@
+<script>
+	alert(this); //this refers to window
+	console.log(this); //this refers to window
+
+	var ftfl = {
+		towfiq: function(){
+			return this;
+		}
+	};
+
+	console.log(ftfl.towfiq()); //a
+</script>
