@@ -200,18 +200,27 @@
 			var allABBR = window.document.getElementsByTagName('abbr');
 
 			var total = allABBR.length;
+			var strUL = "<ul>";
 			for(i=0;i<total;i++){
 				// console.log(allABBR[i].innerHTML); //w3 non-standard
 				// console.log(allABBR[i].nodeType);
 				// console.log(allABBR[i].firstChild.nodeValue);
 				// console.log(allABBR[i].childNodes[0].nodeValue); //e.g. childNodes[0] refers to 1st node
 				// console.log(allABBR[i]);
+				strUL += "<li>"+allABBR[i].innerHTML)+"</li>";
 			}
+			strUL += "</ul>";
+
 			var zenSummary = document.getElementById('zen-summary');
 			console.log(zenSummary.innerHTML);
-			zenSummary.innerHTML = "<b>Hello, I've replaced you!</b>";
-			zenSummary.setAttribute('style','background-color:red');
+			zenSummary.innerHTML = strUL;
+			// zenSummary.innerHTML = "<b>Hello, I've replaced you!</b>";
+			// zenSummary.setAttribute('style','background-color:red');
 			// zenSummary.setAttribute('style','display:none'); //to hide
+
+			//dyanmically element creation
+
+
 		}catch(e){
 			console.log(e.message);
 		}
