@@ -1,0 +1,57 @@
+<script>
+
+	//defining an Object using object constructor
+	var car = new Object();
+
+		//setting property
+		car.name = 'Audi';
+		car.wheel = 4;
+
+		//setting method
+		car.driver = function(){
+			console.log('I am driveing');
+			return "Towfiq";
+		}
+
+	//using car object
+	console.log(car.wheel);
+	console.log(car.driver());
+	console.log(typeof car);
+
+	//object literal (** widely used syntax)
+	var fruits = {
+		name: 'apple', //key:value pair
+		color: 'red',
+		taste: 'sweet',
+
+		satisfy: function(){
+			return 'Satisfying hunger';
+		}
+	};
+	console.log(typeof fruits);
+	console.log(fruits.name);
+
+	//objects are called associative array
+	console.log(fruits['name']);
+
+	console.log(fruits.satisfy());
+
+	//can be accessed using dot(.) as well as [ ]
+	var student = {
+		name: 'bappa',
+		id: 'FTFL007',
+		email: 'bappa@ftfl.com',
+
+		tools: {
+			laptop: false,
+			desktop: {
+				monitor: '17inch',
+				cpu: 'Core i5'
+			}
+		}
+	}
+
+	console.log(student.tools.desktop.monitor);
+	console.log(student['tools']['desktop']['monitor']);
+
+</script>

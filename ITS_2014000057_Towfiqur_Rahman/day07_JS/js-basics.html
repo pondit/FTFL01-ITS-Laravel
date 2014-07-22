@@ -123,6 +123,7 @@
 	var addNumbers = addTwoNumbers;
 	console.log(addNumbers(5,6));
 
+	//function literal	
 	var addThreeNumbers = function(){
 		return arguments[0] + arguments[1] + arguments[2];
 	}
@@ -146,5 +147,40 @@
 		return counter;
 	}
 	console.log(add());
+
+	//to understand public private members of javascript, follow http://javascript.crockford.com/private.html
+
+	//default return from a function
+	var aSampleFunction = function(){
+
+	}
+
+	//self executing
+	;(function(){alert('hello')})();
+	console.log(aSampleFunction());
+
+	//sample closures example
+	function init () {
+	 	var name = "Mozilla" //name is a location variable created by init
+	 	function displayName(){ //displayName is the inner function, a closure
+	 		alert(name); //displayName uses variable declared in parent function
+	 	}
+	 	displayName();
+	 }
+	 init();
+
+	 //function constructor (to make function dynamically)
+	var func = new Function("x",
+							"y",
+							"z",
+							"return x*y*z"
+							);
+	console.log(func(2,3,4));
+
+	//same as
+
+	// function func(x,y,z){
+	// 	return x*y*z;
+	// }	 
 
 </script>Hello World
