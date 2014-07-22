@@ -19,7 +19,17 @@
 	console.log(typeof car);
 
 	//object literal (** widely used syntax)
-	var fruits = {};
+	var fruits = {
+		name: 'apple', //key:value style
+		color: 'red',
+		taste: 'sweet',
+
+		satisfy: function(){
+			return 'Satisfying hunger';
+		}
+	};
 	console.log(typeof fruits);
+	console.log(fruits.name);
+	console.log(fruits.satisfy());
 
 </script>
