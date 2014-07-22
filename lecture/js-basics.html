@@ -120,6 +120,7 @@
 	var addNumbers = addTwoumbers;
 	console.log(addNumbers(5,6));
 	
+	//function literal
 	var addThreeNumbers = function(){
 		return arguments[0] + arguments[1] + arguments[2];
 	}
@@ -148,10 +149,24 @@
 	//to understand public private variables in javascript read the articles. Links are provided on docuemnt file
 	
 	//default return from a function 
-	function aSampleFunction(){
+	var aSampleFunction = function(){
 	
 	}	
-	console.log(aSampleFunction());
+	//bullet proof self executing
+	//;(function(){alert('hello')})();
+	//console.log(aSampleFunction());
 	
+	//function Constructor
+	
+	var func = new Function("x",
+							"y",
+							"z",
+							"return x*y*z"
+							);
+	console.log(func(2,3,4));
+	//same as
+	function func(x,y,z){
+		return x*y*z;
+	}
 	
 </script>Hello World
