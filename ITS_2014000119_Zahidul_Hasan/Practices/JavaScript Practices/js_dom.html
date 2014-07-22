@@ -53,6 +53,26 @@
         }
     })();
 
+
+
+    (function(){
+        try{
+          var   allABBR = document.getElementsByTagName('abbr'); //get elements by tag name
+          
+        var total = allABBR.length; 
+            
+        for(i=0;i<total;i++){
+            console.log(allABBR[i].innerHTML); //show each abbr using innerHTML
+            //console.log(allABBR[i].nodeType);
+            //console.log(allABBR[i].firstchild);
+            
+        }
+        }catch(e){
+            console.log(e.message);
+        }
+    })();
+
+
 </script>
 
 </body>
