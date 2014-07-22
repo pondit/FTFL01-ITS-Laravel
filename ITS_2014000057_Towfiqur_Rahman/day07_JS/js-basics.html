@@ -168,4 +168,12 @@
 	 }
 	 init();
 
+	 //function constructor
+	var func = new Function("x",
+							"y",
+							"z",
+							"return x*y*z"
+							);
+	console.log(func(2,3,4));	 
+
 </script>Hello World
