@@ -230,8 +230,7 @@
      var addFourNumbers = function(){
         
         return arguments[0]+arguments[1]+arguments[2]+arguments[3];
-    }
-    
+    };  
     console.log(addFourNumbers(5,6,7,8));
     
     //introducing defining array in java script
@@ -276,6 +275,22 @@
     var fruit = ['apple',['green','red'],'grape'];
     console.log(fruit[1][1]); //output is red
     
+    console.log(fruit[0][1]);// treating apple as an array and showing its second element p
+    
+    
+    //defining a object in java script
+    
+    var Cars = new Object();
+    Cars.name = 'Audi';
+    Cars.wheel = 4;
+    Cars.drive = function (){
+                     console.log("I am driving");
+                     return "zahid";
+                 }
+    
+    //using the Cars object
+    console.log(Cars.wheel);
+    console.log(Cars.drive());
     
     
 </script>
