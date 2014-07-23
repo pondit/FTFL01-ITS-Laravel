@@ -375,3 +375,26 @@ h3 {
 }
 
 /* end of footer */
+
+/*registration form*/
+fieldset{
+	margin: 0px auto;
+	width: 45%;
+}
+
+legend{
+	border: 1px solid #ccc;
+	background-color: gray;
+	color: white;
+}
+.row{
+	width: 100%;
+	background-color: #D1D1D1;
+}
+.row label{
+	float: left;
+	width: 35%;
+	font-weight: bold;
+}
+
+/*ends*/

@@ -6,6 +6,8 @@
 		<title>Registration form</title>
 		<meta name="description" content="HTML5 registration form">
   		<meta name="author" content="Towfiqur Rahman">
+
+  		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body>
@@ -17,56 +19,56 @@
 					<!-- Legend text ends -->
 				</legend>
 				
-				<div>
+				<div class="row">
 					<label>Serial #: </label>
 					<input type="text" disabled="disabled" name="disabledText" value="34012"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label for="fname">First name: </label>
 					<input type="text" name="firstName" id="fname" autofocus="autofocus" placeholder="Enter your first name"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label for="lname">Last name: </label>
 					<input type="text" name="lastName" id="lname" placeholder="Enter your last name"/>
 				</div>
 				
-				<div>
+				<div class="row">
 					<label>Upload Photo (Max 250Kb): </label>
 					<input type="file" name="fileName"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label>Date of Birth: </label>
 					<input type="date" name="date"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label>Sex: </label>
 					<input type="radio" name="sex" value="male">Male
 					<input type="radio" name="sex" value="female">Female
 				</div>
 				
-				<div>
+				<div class="row">
 					<label for="email-address">Email: </label>
 					<input type="email" name="email" id="email-address" required="required" placeholder="name@example.com"/>
 					<span>*</span>
 				</div>
 
-				<div>
+				<div class="row">
 					<label for="pw">Password: </label>
 					<input type="password" name="password" id="pw" placeholder="Enter password"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label for="confirm-pw">Confirm Password: </label>
 					<input type="password" name="confirmPassword" id="confirm-pw" placeholder="Confirm your password"/>
 				</div>
 				
 				<hr/>
 				
-				<div>
+				<div class="row">
 					<label>Preferable Track: </label>
 					<select name="track"> <!-- To select multiple values, add multiple="multiple" -->
 						<optgroup label="ITS">
@@ -82,81 +84,82 @@
 					</select>
 				</div>
 				
-				<div>
+				<div class="row">
 					<label>Age range(20-28): </label>
 					<input type="range" min="20" max="28" step="1" value="20" name="rangeValue"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label>Training (if any): </label>
 					<input type="week" name="week"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label>Are you doing any job? </label>
 					<input type="checkbox" name="job" value="yes">Yes
 					<input type="checkbox" name="job" value="no">No
 				</div>
 
-				<div>
-					<label>Year(s) of experience(0-10; step-1): </label>
+				<div class="row">
+					<label>Year(s) of experience(>=10): </label>
 					<input type="number" name="numberText" placeholder="Enter year" min="0" max="10" step="1" value="1"/>
 				</div>
 				
 				<hr/>
 
-				<div>
+				<div class="row">
 					<label>Choose your favourite color: </label>
 					<input type="color" name="color" title="Colorpicker"/>
 				</div>
 				
-				<div>
+				<div class="row">
 					<label for="cel-no">Cell No. </label>
 					<input type="tel" name="telephoneNo" id="cel-no" placeholder="880-17xx-xxx-xxx"/>
 				</div>
 				
-				<div>
+				<div class="row">
 					<label for="nid-no">NID No: </label>
 					<input type="text" name="nidNumber" id="nid-no"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label>NID Image: </label>
 					<input type="image" alt="image1" name="image1"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<label for="url">Website(if any): </label>
 					<input type="url" name="urlText" id="url" placeholder="www.example.com"/>
 				</div>
 
-				<div>
+				<div class="row">
+					<label for="textArea">Write about yourself: </label>
 					<textarea rows="10" cols="30" name="textArea">Write something about yourself...</textarea>
 				</div>
 				
 				<hr/>
 
-				<div>
+				<div class="row">
 					<label>Choose datetime(local): </label>
 					<input type="datetime-local" name="datetimeLocal"/>
 				</div>
 
-				<div>
+				<div class="row">
 					<input type="hidden" name="hiddenText"/>
 				</div>
 				
-				<div>
+				<div class="row">
 					<label>Select Current M/Y: </label>
 					<input type="month" name="month"/>
 				</div>
 				
-				<div>
+				<div class="row">
 					<label>Time: </label>
 					<input type="time" name="time"/>
 				</div>
 
-				<div>
-					<label>From where do you know about us? </label>
+				<div class="row">
+					<label>where do you know about us?</label>
 					<input list="reference"/>
 					<datalist id="reference">
 					  	<option value="Classmate">Classmate</option>
@@ -167,24 +170,25 @@
 					</datalist>
 				</div>
 
-				<div>
+				<div class="row">
 					<label for="encKey">Encryption Key: </label>
 					<input type="text" name="encryptionKey" id="encKey"/>
 				</div>
 
-  				<div>
+  				<div class="row">
   					<label>Encryption type: </label>
   				  	<keygen name="security"/>
   				</div>
 				
-				<div>
+				<div class="row">
 					<label for="search">Search: </label>
 					<input type="search" name="searchText" id="search" placeholder="Search keyword"/>
 				</div>
 
 				<hr/>
 				
-				<div>
+				<div class="row">
+					<label>&nbsp;</label>
 					<input type="submit" name="submitButton" value="Submit"/>
 					<input type="reset"/>
 				</div>
