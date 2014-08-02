@@ -1,0 +1,51 @@
+/* * is an Universal Selector
+	- avoid using this selector due to performance issue
+*/
+
+/**{
+	background-color: white;
+}*/
+
+div[role]{
+	color: green;
+}
+
+/* select all the div elements that have 'role' that has a value 'main' & apply rule to make font-color #000*/
+div[role="main"]{
+	background-color: grey;
+}
+
+/*select all the li elements that are second child of their parents*/
+li:nth-child(2){
+	background-color: red;
+}
+
+/* exercise */
+li:nth-child(2n+1){
+	background-color: green;
+}
+
+/* Change backgroun-color of all the <a> that are child of footer
+(decendant combinators introduced)
+*/
+footer a{
+	background-color: cyan;
+}
+
+/* select <i> that has immediate <b> tag */
+b~i{
+	background-color: orange;
+}
+
+/* id selector */
+#zen-summary{
+	background-color: purple;
+}
+
+
+/* class defenition introduced */
+.danger{
+	color: red;
+	font-size: 16;
+	font-weight: 800;
+}

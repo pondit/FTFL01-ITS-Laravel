@@ -1,0 +1,48 @@
+<script>
+
+//Introducing Strict mode
+
+"use strict"
+
+
+//this as window object
+
+ alert(this);
+console.log(this); 
+
+
+//this as local object here this will be treated as object ftfl
+var ftfl = {
+    
+    zahid: function(){
+        
+        return  this;
+    }
+    
+};
+
+var aFTFL = ftfl.zahid();
+console.log(aFTFL);
+
+ftfl.zahid(); // calling function as an object literal
+ftfl['zahid'](); //calling function as an associative array
+
+
+//this will used as window 
+//function definition is in a varibale which is in window object
+var aFTFL2 = ftfl.zahid;
+console.log(aFTFL2());
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

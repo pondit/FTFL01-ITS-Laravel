@@ -1,0 +1,18 @@
+<script>
+	"use strict"
+	//alert(this);
+	console.log(this);//window
+	
+	var ftfl = {
+		jahangir: function() {
+			return this;
+		}
+	};
+	
+	console.log(ftfl.jahangir()); // as an Object Method
+	//console.log(ftfl['jahangir']()); //calling object method as an element of associative array 
+	
+	var aFTFL = ftfl.jahangir;
+	console.log(aFTFL());  
+
+</script>

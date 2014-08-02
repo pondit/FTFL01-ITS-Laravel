@@ -1,0 +1,186 @@
+<script>
+	
+	//output functions
+	// alert('Hello FTFL'); //small information
+	// document.write("Hello FTFL <br/>");
+	// document.writeln('Hello writeline');
+	// console.log("Hi"); //developers only
+
+	// confirm("Are you sure you want to delete this?");
+	// prompt("whats your name?","e.g. Jahangir");
+
+	//defining variable
+	var aVariable = 12;
+	anotherVariable = 10;
+	var aStringVariable = 'Hello FTFL';
+	var anotherStringVar = " How are you?"
+	var numberLikeString = '111111';
+	var isBoolean = true;
+	var anEmptyValue = ""; // ''
+	var anEmptySpace = " "; // ' '
+	var aNumber0 = 0;
+	var aNumberLikeString0 = '0';
+	var  aNullValue = null;
+	var ftfl01;
+
+	// console.log(aVariable);
+	// console.log(anotherVariable);
+	// console.log(numberLikeString);
+	// console.log(aStringVariable);
+	// console.log(isBoolean);
+
+	// //data type
+	// console.log(typeof aVariable);
+	// console.log(typeof anotherVariable);
+	// console.log(typeof aStringVariable);
+	// console.log(typeof numberLikeString);
+	// console.log(typeof isBoolean);
+	// console.log(typeof anEmptyValue);
+	// console.log(typeof anEmptySpace);
+	// console.log(typeof aNumber0);
+	// console.log(typeof aNumberLikeString0);
+	// console.log(typeof aNullValue);
+
+	// try{
+	// 	console.log(ftfl);
+	// 	console.log(typeof ftfl);
+	// }catch(error){
+	// 	console.log(typeof error);
+	// 	console.log(error.name);
+	// 	console.log(error.message);
+	// }
+	
+	// console.log(ftfl01);
+	// console.log(typeof ftfl01);
+
+	// console.log(ftfl02);
+	// console.log(typeof ftfl02);
+	// var ftfl02;
+
+	// console.log(ftfl03);
+	// console.log(typeof ftfl03);
+	// var ftfl03 = "Lucky";
+	// console.log(ftfl03);
+	// console.log(typeof ftfl03);
+
+	// console.log(window);
+	// console.log(this); //global scope
+	// console.log(self);
+
+	// console.log(window.ftfl03);
+	// this.alert('this.alert');
+
+	console.log("aStringVariable" in window); //true, as this variable exists
+	console.log("towfiq" in window); //false, as this variable doesn't exist
+	console.log(aVariable+anotherVariable); //22
+	console.log(aStringVariable+anotherStringVar); //Hello FTFL How are you?
+	console.log(aStringVariable+aNumber0);
+	
+	var aMultipledVal = aVariable*aStringVariable;
+	console.log(aMultipledVal); //NaN
+	console.log(typeof aMultipledVal);
+
+	console.log(isNaN(aMultipledVal));
+
+	//Function exercise: Number, ParseInt, ParseFloat
+	console.log(Number('afds')); //type casting to number: out: NaN
+	console.log(Number('123afds')); //type casting to number: out: NaN
+	console.log(Number('afds123')); //type casting to number: out: NaN
+	console.log(Number('123.12')); //type casting applicable only for number like string
+
+	console.log(parseInt('afds'));
+	console.log(parseInt('123afds'));
+	console.log(parseInt('afds123'));
+	console.log(parseInt('123.12'));
+
+	var aVar = false; //false
+	var aVar = 0; //false
+	var aVar; //false
+	var aVar = null; //false
+	var aVar = ''; //false
+
+	var aVar = 'String'; //true
+	var aVar = 123; //true
+	var aVar = '0'; //true
+	var aVar = " "; //true
+
+	if (aVar) {
+		console.log('I am treated as true');
+	}else{
+		console.log('I am treated as flse');
+	}
+
+	//declaration of a function
+	function addTwoNumbers(){
+		sum = arguments[0] + arguments[1]; //arguments by default undefined
+		return sum;
+	}
+
+	// function call
+	var result = addTwoNumbers(2,3);
+	console.log(result);
+
+	var addNumbers = addTwoNumbers;
+	console.log(addNumbers(5,6));
+
+	//function literal	
+	var addThreeNumbers = function(){
+		return arguments[0] + arguments[1] + arguments[2];
+	}
+	console.log(addThreeNumbers(5,6,7));
+
+	//anonymous function (self-executing function): its being called only once
+	console.log((function(){
+		return arguments[0] + arguments[1] + arguments[2];
+	}) (2,3,4,5));
+
+	console.log(sum);
+
+	//Javascript closures (function within function)
+	function add(){
+		var counter = 0;
+
+		function plus(){
+			counter += 1;
+		}
+		plus();
+		return counter;
+	}
+	console.log(add());
+
+	//to understand public private members of javascript, follow http://javascript.crockford.com/private.html
+
+	//default return from a function
+	var aSampleFunction = function(){
+
+	}
+
+	//self executing
+	;(function(){alert('hello')})();
+	console.log(aSampleFunction());
+
+	//sample closures example
+	function init () {
+	 	var name = "Mozilla" //name is a location variable created by init
+	 	function displayName(){ //displayName is the inner function, a closure
+	 		alert(name); //displayName uses variable declared in parent function
+	 	}
+	 	displayName();
+	 }
+	 init();
+
+	 //function constructor (to make function dynamically)
+	var func = new Function("x",
+							"y",
+							"z",
+							"return x*y*z"
+							);
+	console.log(func(2,3,4));
+
+	//same as
+
+	// function func(x,y,z){
+	// 	return x*y*z;
+	// }	 
+
+</script>Hello World

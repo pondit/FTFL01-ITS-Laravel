@@ -1,0 +1,391 @@
+<script>
+  
+    //output showing in js
+    
+    alert("hello FTFL"); //alert box
+    document.write("Hello FTFL");
+    document.writeln("Hello FTFL");
+    
+    console.log("Hi"); //console output
+    
+    confirm("Are you FTFL?"); //confirm Box
+    
+    prompt("What is your name?","e.g. Zahidul Hasan"); //prompt box 
+    
+    //--------------------------------------------
+    
+    
+    //defining variable
+    
+    var aVariable= 12;
+    anotherVariable= 10;
+    var aStringVariable= 'Hello FTFL';
+    var anotherStringVariable= "111";
+    var aBooleanVariable = true;
+    var aEmptyValue= "";
+    var aEmptySpace=" ";
+    //var aNullValue = null;
+    var ftfl01;
+    
+  /*  console.log(aVariable);
+    console.log(anotherVariable); //showing variable in console
+    console.log(aStringVariable);
+    console.log(anotherStringVariable);
+    console.log(aBooleanVariable);
+    console.log(aEmptyValue);
+    console.log(aEmptySpace);
+    //console.log(aNullvalue);
+    
+    //----------------------------------
+    
+    //data type
+    
+    console.log(typeof aVariable);
+    console.log(typeof anotherVariable);
+    console.log(typeof aStringVariable); //string variable in single quote
+    console.log(typeof anotherStringVariable); //string variable in double quote
+    console.log(typeof aBooleanVariable);
+    console.log(typeof aEmptyValue);
+    console.log(typeof aEmptySpace);
+    //console.log(typeof aNullvalue); //showing data type object for null value */
+    
+    //--------------------------------------
+    
+    //Try Catch introduction
+    
+    try{
+        console.log(ftfl);
+        console.log(typeof ftfl);
+        
+    }catch(error){
+        console.log(typeof error);
+        console.log(error.name);
+        console.log(error.message);
+        
+    }
+     
+  /*  console.log(ftfl01);
+    console.log(typeof ftfl01); // undefined data type is introduced
+    
+    console.log(ftfl02);
+    console.log(typeof ftfl02); */
+    
+   // var ftfl02; //global scope variables are stored first in js 
+    
+    //showing window object 
+    
+  /*  console.log(window); //introduction to window object
+    console.log(this); //In Global scope this will be treated as window object
+    console.log(self); //Show window object */
+    
+    var ftfl03 = 'lucky?';
+  //  console.log(window.ftfl03); //ftfl03 variable is in window object  */
+    
+    //--------------------------
+    
+    //Operators introduction
+    
+    console.log("jahangir" in window); // using in operator to check whether the variable is in window object
+    console.log("aVariable" in window);
+ 
+    //'+' is an overloaded operator which will be used as arithmatic and string operator... 
+    //number + string will be treated as string and concetanation will be used
+    console.log(aVariable+anotherVariable); //use of plus as arithmatic operator
+    console.log(aStringVariable+anotherStringVariable); //use of plus as string operator
+    
+    console.log(aVariable * aStringVariable); 
+    //if we multiply a number with a string output will be NaN means not as number 
+    //NaN data type is number
+    console.log(typeof aVariable * aStringVariable);
+    
+    //isNaN function shows whether the value is NaN then true else false
+    console.log(isNaN(aVariable * aStringVariable)); 
+    
+    
+    //Number function which type cast to number if the string is like number '123'
+    console.log(Number('asda'));
+    console.log(Number('123fgfh'));
+    console.log(Number('asda123'));
+    console.log(Number('123.12'));
+    
+    
+    //parseInt fucntion which type cast to Int when number like string  and number first string later string
+    console.log(parseInt('asda'));
+    console.log(parseInt('123asda'));
+    console.log(parseInt('asda123'));
+    console.log(parseInt('123.12'));
+    
+   
+    var aVar;
+    var aVar= 'string'; //true
+    var aVar= 123; //true
+    var aVar= 0; //false
+    var aVar ='0' //true
+    var aVar= null; //false
+    var aVar = ''; //false
+    var aVar = ' '//true
+    
+    
+    // undefined,number 0, null, emptystring will treated as false
+    
+    if(aVar){
+        
+        console.log("i am True");
+    }
+    
+    else
+    {
+        console.log("i am False");
+        
+    }
+    
+    
+    //declaration of a function
+
+    function addTwoNumbers(){
+        
+        var sum = arguments[0]+arguments[1]; //Introducing argument built in array
+        return sum;
+    }
+    
+    /* if we use var variable name then the variable is local to function 
+     but if not decalared with var just only variable name then its global variable
+      */
+    
+    
+    //function call
+    var result = addTwoNumbers(4,2);
+    
+    console.log(result);
+    
+    
+    //funciton can be stored in a variable and to execute it we just need to use paranthesis
+    var addNumbers = addTwoNumbers;
+    console.log(addNumbers(5,6));
+    console.log(addNumbers()); // Show output NaN as arguments array elements are initially undefined
+    
+   
+    //Introducing anonymous function and can be stored in variable
+    var addThreeNumbers = function(){
+        
+        return arguments[0]+arguments[1]+arguments[2];
+    }
+    
+    console.log(addThreeNumbers(5,6,7));
+    
+    //self executing function 
+    
+   console.log ( (function(){
+        
+        return arguments[0]+arguments[1]+arguments[2];
+    } ) (1,5,6));
+    
+    
+    //Introducing closure and nested fucnction
+    
+    function add(){ //closure
+        
+        var counter = 0;
+        
+            
+            function plus(){  
+                
+                counter += 1;
+            }
+            
+            plus();
+
+         return counter;
+               
+    }
+    
+    
+    console.log(add());
+    
+    
+    
+    //another closure example
+    function init() {
+    var name = "Mozilla"; // name is a local variable created by init
+    function displayName() { // displayName() is the inner function, a closure
+        alert (name); // displayName() uses variable declared in the parent function    
+    }
+    displayName();    
+    }
+    init();
+    
+    
+    //function constructor
+    
+    var func = new Function("x",
+                            "y",
+                            "z",
+                            "return x*y*z"
+                             );
+                     
+     console.log(func(2,3,4));
+     
+     //function literal
+     
+     var addFourNumbers = function(){
+        
+        return arguments[0]+arguments[1]+arguments[2]+arguments[3];
+    };  
+    console.log(addFourNumbers(5,6,7,8));
+    
+    //introducing defining array in java script
+    
+    var anArray = new Array('apple',
+                            'banana',
+                            'grape');
+            
+                            
+                    
+     console.log(anArray); //output the array items list
+
+    //access an array element
+    
+    console.log(anArray[1]);
+    
+    //array length 
+    console.log(anArray.length);
+    
+    var anoArr = new Array(2,3,'car'); //number and string both can be stored in same array
+    console.log(anoArr);
+    console.log(anoArr.length);
+    
+    var aDiffArr =new Array(5); //Array with single number element will be treated as array length
+    console.log(aDiffArr); //array elements will be undefined
+    console.log(aDiffArr.length); 
+    
+    aDiffArr[2]= "zess"; //accessing array index 2 and change undefined value with zess
+    console.log(aDiffArr); //[undefined,undefined,zess,undefined,undefined]
+    
+    //Array is an object type
+    console.log(typeof aDiffArr);
+    
+    //Array with single element
+    var anArrLiteral =['a'];
+    console.log(anArrLiteral);
+    
+    //array literal
+    var car = ['sedan','ferari'];
+    
+    //multiple array
+    var fruit = ['apple',['green','red'],'grape'];
+    console.log(fruit[1][1]); //output is red
+    
+    console.log(fruit[0][1]);// treating apple as an array and showing its second element p
+    
+    
+    //defining an object in java script
+    
+    var Cars = new Object();
+    Cars.name = 'Audi';
+    Cars.wheel = 4;
+    Cars.drive = function (){
+                     console.log("I am driving");
+                     return "zahid";
+                 }
+    
+    //using the Cars object
+    console.log(Cars.wheel);
+    console.log(Cars.drive());
+    
+    //object literal
+    
+    var fruits = {};
+    console.log(typeof fruits);
+    
+    //object literal
+    var trainer = {
+         name: 'rusdid',
+         track: 'php',
+         
+         teach: function(){
+             console.log('teaching FTFLs');
+         }
+        
+    };
+    
+    console.log(trainer.name);
+    console.log(trainer.track);
+    console.log(trainer.teach());
+    
+    //objects are called as an associative array if key: value pair is given for properties
+    console.log(trainer['name']);
+    
+  
+    //object literal and object as an associative array another example
+    
+    var student = {
+        name: 'zahid',
+        id:'ITS2014000119',
+        email:'zahid.riad@gmail.com',
+        tools: {
+            
+            laptop: false,
+            desktop:{
+                
+                monitor:'20inch',
+                cpu: 'i5'
+            }
+            
+            
+        }
+    };
+    
+    
+    console.log(student.tools.desktop.monitor);
+    console.log(student['tools']['desktop']['monitor']);
+    
+    
+    //defining object using a constructor function
+    
+    function CarsDetails(make,model,year){
+        
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.drive = drive;
+        //defining object method Internally
+        this.food = function(){ 
+            return "I am Hungry";
+        }
+    }
+    
+    //defining object method externally
+    function drive(){
+            return "I am driving " + this.make + " "+ this.model;
+        }
+    
+    var mycar1 = new CarsDetails("Eagle","Talon TSi",1990);
+    var mycar2 = new CarsDetails("Mazda","Miata",1980);
+    
+    console.log(typeof mycar1);
+    console.log(mycar1.make);
+    console.log(typeof mycar2);
+    console.log(mycar2.make);
+    console.log(mycar1.drive());
+    console.log(mycar2.drive());
+    console.log(mycar1.food());
+    
+    //defining object using object.create()
+    
+    var person ={                         //initial step to inheritence in js
+        kind: 'human'
+    };
+    
+    var zahid = Object.create(person);
+    console.log(zahid.kind);
+    
+    //object riad will use person kind property and also age property of riad object
+    //inheritence example
+    var riad = Object.create(person, {age:{ value : 13 } }); 
+    console.log(riad.kind);
+    console.log(riad.age);
+    
+    
+</script>
+
+hello world
