@@ -7,6 +7,17 @@
 <style>
 label {display:block;
 }
+*
+{
+background-color:pink;
+}
+
+#idStudentsName,#idFName,#idMName,#idSName
+{
+background-color:green;
+}
+
+
 </style>
 
 <br>
@@ -19,6 +30,42 @@ label {display:block;
 	maxlength="150"
 	tabindex="1"
 	/></br>
+
+<label for="sex"><br> Sex   :</br></label>
+		<label>Male</label><input type="radio"
+					name="radsize"
+					id = "sizeSmall"
+					value = "small"
+					checked = "checked" />
+		<label>Female</label><input type="radio"
+				name="radsize"
+				id = "sizeSmall"
+				value = "small"
+				checked = "checked" />
+<br>
+ <tr>
+                   <br><td>Choice:         </td></br>
+                    <td>
+                        <input type="checkbox" checked>ITS
+                        <input type="checkbox" checked>ITES
+                        <input type="checkbox">ITSS
+                        <input type="checkbox">MGT</td>
+                </tr>
+					</br>
+				
+ <tr>
+                    <td>Date of Birth:  </td>
+                    <td>
+                        <select>
+                            <option>Day</option>
+                        </select>
+                        <select>
+                            <option>Month</option>
+                        </select>
+                        <select>
+                            <option>Year</option>
+                        </select></td>
+                </tr>
 <label for="sex"> Sex   : Male </label>
 <input type="radio"
 	name="radsize"
@@ -75,6 +122,9 @@ label {display:block;
 	maxlength="180"
 	tabindex="1"
 	/>
+<div class="danger">	<label>Contract No:</label>
+</div>
+
 	<label>Contract No:</label>
 <input type="text-number"
 	size="30"
@@ -88,6 +138,26 @@ label {display:block;
 	maxlength="180"
 	tabindex="1"
 	/>
+
+</br>
+<br>
+<div class="danger"><label>Email Address :</label>
+</div>
+	<input type="text"
+		size="30"
+	maxlength="100"
+	tabindex="1"/>
+
+</br>
+
+<br><label>District:<label>
+<input type="text" 
+	size="30"
+	name="addressText"
+	maxlength="100"
+	tabindex="1"
+	/></br>
+
 	/br>
 <div>
 <label>City:</label>
@@ -220,10 +290,7 @@ label {display:block;
 
 
 
-
-
-
-</Field>
+</Fieldset>
 <fieldset>
 		<button> Submit </button>
 </fieldset>
