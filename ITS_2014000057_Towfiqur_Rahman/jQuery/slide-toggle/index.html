@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+	<title>Sample Jquery</title>
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<div id="slideMe">
+    This content will appear and disappear when the div is slid in and out.
+</div>
+<!-- Toggle slide command -->
+<input type="button" id="btnSlideToggle" value="Slide Toggle">
+
+<script>
+$('#btnSlideToggle').click(function() {
+    $('#slideMe').slideToggle('fast');
+});
+</script>
+</body>
+</html>
