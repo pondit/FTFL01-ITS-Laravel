@@ -1,0 +1,172 @@
+<script>
+	//alert("Hello FTFL");//small information
+	document.write("Hello FTFL");
+	document.writeln("Hello FTFL");
+	console.log("Hi");//develoeprs only
+	
+	//confirm("Are you sure you want to delete?");
+	//prompt("What is your name","e.g Jahangir");
+
+	//defining variable
+	 var aVariable = 12;
+	anothervariable = 10;
+	var aStringVariable = "Hello FTFL";
+	var anStringVar = ', how are you?';
+	var aNumberLikeStringVariable = '1111';
+	var aBoolean = true;
+	var anEmptyValue = "";//''
+	var anEmptySpace = "  ";//'  '
+	var aNumber0 = 0;
+	var aNumberLikeString0 = '0';
+	var aNullValue = null;
+	var ftfl01;
+	//data type
+	/*console.log(aVariable);
+	console.log(anothervariable);
+	console.log(typeof aVariable);
+	console.log(typeof anothervariable);
+	console.log(aStringVariable);
+	console.log(typeof aStringVariable);
+	console.log(typeof aNumberLikeStringVariable);
+	console.log(aBoolean);
+	console.log(typeof aBoolean);
+	console.log(typeof anEmptyValue);
+	console.log(typeof anEmptySpace);
+	console.log(typeof aNumber0);
+	console.log(typeof aNumberLikeString0);
+	console.log(aNullValue);
+	console.log(typeof aNullValue);
+	
+	try{
+		console.log(ftfl);
+		console.log(typeof ftfl);
+	}catch(error){
+		console.log(typeof error);
+		console.log(error.name);
+		console.log(error.message);
+	}
+	console.log(ftfl01);
+	console.log(typeof ftfl01);
+
+	console.log(ftfl02);
+	console.log(typeof ftfl02);	
+	var ftfl02;
+	
+	console.log(ftfl03);
+	console.log(typeof ftfl03);	
+	var ftfl03 = "Lucky?";
+	console.log(ftfl03);
+	console.log(typeof ftfl03);	
+	
+	console.log(window);
+	console.log(this);//global scope
+	console.log(self);
+	
+	console.log(window.ftfl03);
+	this.alert('this.alert');
+	*/
+	console.log("aStringVariable" in window)
+	//Overloaded + operator
+	//two numbers
+	console.log(aVariable + anothervariable);
+	//two strings
+	console.log(aStringVariable + anStringVar);
+	//a number + a String
+	console.log(aVariable + aNumberLikeString0);
+	
+	var aMultipliedVal = aVariable * anStringVar;
+	console.log(aMultipliedVal);
+	console.log(typeof aMultipliedVal);
+	
+	console.log(isNaN(aMultipliedVal));
+	
+	console.log(Number('afds'));
+	console.log(Number('afds123'));
+	console.log(Number('123afds'));
+	console.log(Number('123.12'));
+	
+	console.log(parseInt('afds'));
+	console.log(parseInt('afds123'));
+	console.log(parseInt('123afds'));
+	console.log(parseInt('123.72'));
+	
+	var aVar; //undefined = false
+	var aVar = 0;//false
+	var aVar = null;//false
+	var aVar = '';//false
+	var aVar = false;
+	
+	var aVar = 'string';//true
+	var aVar = 123;//true	
+	var aVar = '0'; //true	
+	var aVar = ' ';//true
+	
+	if(aVar){
+		console.log('I am treated as true');
+	}else{
+		console.log('I am treated as false');
+	}
+	
+	//declaration of a function	
+	function addTwoumbers(){		
+		//var sum = num1+num2;
+		sum = arguments[0]+arguments[1];
+		return sum;
+	}
+	//function call
+	var result = addTwoumbers(4,2);
+	console.log(result);
+	
+	var addNumbers = addTwoumbers;
+	console.log(addNumbers(5,6));
+	
+	//function literal
+	var addThreeNumbers = function(){
+		return arguments[0] + arguments[1] + arguments[2];
+	}
+	console.log(addThreeNumbers(5,6,7));
+	//self executing function
+	console.log((function(){
+		return arguments[0] 
+		+ arguments[1] 
+		+ arguments[2];
+	})(2,3,4,5));
+	
+	console.log(sum);
+	//closure
+	function add() {
+		var counter = 0;		
+		
+		function plus() {
+			counter += 1;
+		}		
+		plus(); 
+		
+		return counter;
+	}
+	console.log(add());
+	
+	//to understand public private variables in javascript read the articles. Links are provided on docuemnt file
+	
+	//default return from a function 
+	var aSampleFunction = function(){
+	
+	}	
+	//bullet proof self executing
+	//;(function(){alert('hello')})();
+	//console.log(aSampleFunction());
+	
+	//function Constructor
+	
+	var func = new Function("x",
+							"y",
+							"z",
+							"return x*y*z"
+							);
+	console.log(func(2,3,4));
+	//same as
+	function func(x,y,z){
+		return x*y*z;
+	}
+	
+</script>Hello World

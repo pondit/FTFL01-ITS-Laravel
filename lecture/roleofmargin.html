@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Role of margin in html normal flow </title>
+	<style type="text/css">
+		
+		body{
+			margin:0;
+		}
+		h1{
+			background-color:green;
+		}
+		div{
+			background-color:black;
+			
+		}
+		strong{
+			background-color:orange;
+			/* margin-right:20px;*/
+		}
+		span{
+			background-color:pink;
+			/*margin-left:-50px;*/
+		}
+		
+		/*
+		CSSP
+		static = no positioning
+		relative
+		absolute
+		float (clear)
+		fixed : your task
+		
+		
+		*/
+		/*
+		strong{
+			position:relative;
+			top:50px;
+			left:50px;
+		}
+		*/
+		strong{
+			position:absolute;
+			top:10px;
+			left:10px;
+		}
+		div{
+			position:relative;
+		}
+		h1{
+			position:absolute;
+			width:200px;
+		}
+	</style>
+</head>
+<body>
+
+		<h1>Hi, <i>FTFL</i></h1>
+		<div>
+			<strong>BATCH</strong><span>FTFL01</span>
+		</div>
+
+</body>
+</html>

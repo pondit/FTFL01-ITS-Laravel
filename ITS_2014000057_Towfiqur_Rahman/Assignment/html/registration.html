@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Registration form</title>
+		<meta name="description" content="HTML5 registration form">
+  		<meta name="author" content="Towfiqur Rahman">
+	</head>
+
+	<body>
+		<form action="registration.html" method="GET" target="_blank">
+			<fieldset>
+				<legend>
+					<!-- Legend text starts -->
+					Registration Form &rarr;
+					<!-- Legend text ends -->
+				</legend>
+				
+				<div>
+					<label>Serial #: </label>
+					<input type="text" disabled="disabled" name="disabledText" value="34012"/>
+				</div>
+
+				<div>
+					<label for="fname">First name: </label>
+					<input type="text" name="firstName" id="fname" autofocus="autofocus" placeholder="Enter your first name"/>
+				</div>
+
+				<div>
+					<label for="lname">Last name: </label>
+					<input type="text" name="lastName" id="lname" placeholder="Enter your last name"/>
+				</div>
+				
+				<div>
+					<label>Upload Photo (Max 250Kb): </label>
+					<input type="file" name="fileName"/>
+				</div>
+
+				<div>
+					<label>Date of Birth: </label>
+					<input type="date" name="date"/>
+				</div>
+
+				<div>
+					<label>Sex: </label>
+					<input type="radio" name="sex" value="male">Male
+					<input type="radio" name="sex" value="female">Female
+				</div>
+				
+				<div>
+					<label for="email-address">Email: </label>
+					<input type="email" name="email" id="email-address" required="required" placeholder="name@example.com"/>
+					<span>*</span>
+				</div>
+
+				<div>
+					<label for="pw">Password: </label>
+					<input type="password" name="password" id="pw" placeholder="Enter password"/>
+				</div>
+
+				<div>
+					<label for="confirm-pw">Confirm Password: </label>
+					<input type="password" name="confirmPassword" id="confirm-pw" placeholder="Confirm your password"/>
+				</div>
+				
+				<hr/>
+				
+				<div>
+					<label>Preferable Track: </label>
+					<select name="track"> <!-- To select multiple values, add multiple="multiple" -->
+						<optgroup label="ITS">
+					    	<option value="laravel">Laravel</option>
+					    	<option value="asp-dot-net">ASP.net</option>
+					  	</optgroup>
+					  	<option disabled="disabled" value="ITSM">ITSM</option>
+					  	<optgroup label="ITES">
+					    	<option value="graphics" selected="selected">Graphics</option>
+						    <option value="seo">SEO</option>
+					  	</optgroup>
+					  	<option value="management">MGT</option>
+					</select>
+				</div>
+				
+				<div>
+					<label>Age range(20-28): </label>
+					<input type="range" min="20" max="28" step="1" value="20" name="rangeValue"/>
+				</div>
+
+				<div>
+					<label>Training (if any): </label>
+					<input type="week" name="week"/>
+				</div>
+
+				<div>
+					<label>Are you doing any job? </label>
+					<input type="checkbox" name="job" value="yes">Yes
+					<input type="checkbox" name="job" value="no">No
+				</div>
+
+				<div>
+					<label>Year(s) of experience(0-10; step-1): </label>
+					<input type="number" name="numberText" placeholder="Enter year" min="0" max="10" step="1" value="1"/>
+				</div>
+				
+				<hr/>
+
+				<div>
+					<label>Choose your favourite color: </label>
+					<input type="color" name="color" title="Colorpicker"/>
+				</div>
+				
+				<div>
+					<label for="cel-no">Cell No. </label>
+					<input type="tel" name="telephoneNo" id="cel-no" placeholder="880-17xx-xxx-xxx"/>
+				</div>
+				
+				<div>
+					<label for="nid-no">NID No: </label>
+					<input type="text" name="nidNumber" id="nid-no"/>
+				</div>
+
+				<div>
+					<label>NID Image: </label>
+					<input type="image" alt="image1" name="image1"/>
+				</div>
+
+				<div>
+					<label for="url">Website(if any): </label>
+					<input type="url" name="urlText" id="url" placeholder="www.example.com"/>
+				</div>
+
+				<div>
+					<textarea rows="10" cols="30" name="textArea">Write something about yourself...</textarea>
+				</div>
+				
+				<hr/>
+
+				<div>
+					<label>Choose datetime(local): </label>
+					<input type="datetime-local" name="datetimeLocal"/>
+				</div>
+
+				<div>
+					<input type="hidden" name="hiddenText"/>
+				</div>
+				
+				<div>
+					<label>Select Current M/Y: </label>
+					<input type="month" name="month"/>
+				</div>
+				
+				<div>
+					<label>Time: </label>
+					<input type="time" name="time"/>
+				</div>
+
+				<div>
+					<label>From where do you know about us? </label>
+					<input list="reference"/>
+					<datalist id="reference">
+					  	<option value="Classmate">Classmate</option>
+					  	<option value="Colleague">Colleague</option>
+					  	<option value="University">University</option>
+					  	<option value="Online">Online</option>
+					  	<option value="Other">Other</option>
+					</datalist>
+				</div>
+
+				<div>
+					<label for="encKey">Encryption Key: </label>
+					<input type="text" name="encryptionKey" id="encKey"/>
+				</div>
+
+  				<div>
+  					<label>Encryption type: </label>
+  				  	<keygen name="security"/>
+  				</div>
+				
+				<div>
+					<label for="search">Search: </label>
+					<input type="search" name="searchText" id="search" placeholder="Search keyword"/>
+				</div>
+
+				<hr/>
+				
+				<div>
+					<input type="submit" name="submitButton" value="Submit"/>
+					<input type="reset"/>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>

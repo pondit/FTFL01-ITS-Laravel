@@ -1,0 +1,54 @@
+/* 
+http://www.w3.org/TR/selectors/#selectors
+
+Universal Selector 
+	-Avoid using this selector. Performance issue
+*/
+*{
+	background-color:#FFFFFF;
+}
+
+/* Select all the div elements that have 'role' attribute
+and apply a rule to make the font color yellow */
+
+div[role]{
+	color:#999999;
+}
+
+/* Select all the div elements that have 'role' attribute
+that has a value 'main'
+and apply a rule to make the font color #000000 */
+div[role="main"]{
+	background-color:#EEE;
+}
+/* select all the li elements 
+that are second child of their parents */
+
+li:nth-Child(2){
+	background-color:red;
+}
+/* exercise */
+li:nth-Child(2n+1){
+	background-color:green;
+}
+
+/* select all the a that are descendant of footer */
+
+footer a{
+	background-color:green;
+}
+
+b~i{
+	background-color:blue;
+}
+
+#zen-summary{
+	background-color:green;
+}
+
+.danger{
+	color:red;
+	font-size:30px;
+}
+
+ 

@@ -1,0 +1,111 @@
+<script>
+	/*alert("Hello FTFL");//small information
+	document.write("Hello FTFL");
+	document.writeln("Hello FTFL");
+
+	console.log("Hi");//developers only
+
+	//confirm("are you sure");
+	//prompt("what is ur name","e.g.jahangir");
+
+	//defining varibale
+	var aVariable = 121;
+	anothervariable = 222;
+	var aStirngVariable = 'Hello FTFL';
+	var anotherStirngVariable = '1111';
+	var aBoolean = true;
+	var anEmptyValue = "";
+	var anullValue = null;
+	//var ftfl01;
+
+	//datatype
+
+	console.log(typeof aVariable);
+	console.log(typeof anothervariable);
+	console.log(typeof aStirngVariable);
+	console.log(typeof anotherStirngVariable);
+	console.log(typeof aBoolean);
+	console.log(typeof anEmptyValue);
+
+	
+	console.log(typeof anullValue);
+	//console.log(aBoolean);
+
+	//console.log(aStirngVariable);
+	//console.log(anotherStirngVariable);
+
+	//console.log(aVariable);
+	//console.log(anothervariable);
+	//console.log(ftfl01);	
+	//console.log(typeof ftfl01);
+	//var ftfl01;
+
+	console.log(window);
+	console.log(this);//global scope
+	console.log(this);*/
+
+	var aVariable = 121;
+	anothervariable = 222;
+	var aStirngVariable = 'Hello FTFL';
+	var anotherStirngVariable = ', how are you?';
+	var aBoolean = true;
+	var anEmptyValue = "";
+	var anullValue = null;
+	var ftfl01;
+	//var jahangir;
+
+	//console.log("ftfl01" in window);
+	//overloaded + operator;
+	//console.log(aVariable + anothervariable);
+
+	//console.log(aStirngVariable + anotherStirngVariable);
+
+	//console.log(aStirngVariable * anotherStirngVariable);
+
+
+
+	//isNaN();// is not a number?
+
+	function addtwonumbers (){
+		//var sum = 2 + 3;
+		var sum = arguments[0] + arguments[1];
+		return sum;
+	}
+
+	console.log(addtwonumbers(4,2));
+
+	var addNumbers = addtwonumbers();
+
+	console.log(addNumbers);
+
+	var addNumbers = addtwonumbers;
+
+	console.log(addNumbers);
+
+	var addThreeNumbers = function () {
+		return arguments[0] + arguments[1] + arguments[2];  
+	}
+
+	console.log(addThreeNumbers(5,6,7));
+	//self executing function
+
+	console.log( (function() {
+		return arguments[0] + arguments[1] + arguments[2];  	
+	})  (5,6,7) );
+
+	function add(){
+		var counter = 0;
+
+		function plus() {
+			counter += 1;
+		}
+
+		plus();
+		return counter;
+	}
+
+	console.log(add());
+
+
+</script>
+		
