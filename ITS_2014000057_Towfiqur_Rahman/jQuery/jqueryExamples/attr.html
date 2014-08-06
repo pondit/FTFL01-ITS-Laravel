@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working with jQuery - attr()</title>
+        <style>
+            p {
+                margin: 20px 0 0;
+                }
+            b {
+                color: blue;
+                }
+        </style>
+    </head>
+
+    <body>
+
+        <input id="check1" type="checkbox" checked="checked">
+        <label for="check1" id="lblId">Check me</label>
+        <p></p>
+
+    	<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+    	<script>
+
+        $( "input" ).change(function() {
+                        var $input = $( this );
+                        $( "p" ).
+                        html( ".attr( 'checked' ): " +
+                        $input.attr( "checked" ) + "" +".prop( 'checked' ): " + $input.prop( "checked" ) + "" +".is( ':checked' ): " + $input.is( ":checked" ) + "" );
+                    })
+            .change();
+
+            $(document).ready(function(){
+                //jQuery function as getter
+                console.log($('#lblId').attr('for'));
+
+                //jQuery function as setter
+                console.log($('#lblId').attr('for','PIASH'));
+
+                //setter-getter in same line as long as object returns
+                console.log($('#lblId').attr('for','ASHIQUE').attr('for'));
+
+                //Applying CSS
+                console.log($('#lblId').attr('for','ASHIQUE').css('background-color','red'));
+
+                //Applying multiple CSS rules
+                console.log($('#lblId').attr('for','ASHIQUE').css('background-color','red').
+                                                                css('display','block').
+                                                                css('width','300px') //css('display','block') can be placed after css('width','300px') as well
+                                                                );
+                //Applying multiple CSS rules with object
+                console.log($('#lblId').attr('for','ASHIQUE').css('background-color','red').
+                                                                css('display','block').
+                                                                css({'background-color':'green',
+                                                                        'width' : '300px',
+                                                                        'display' : 'block'
+                                                                    })
+                                                                );
+            });
+    	</script>
+    </body>
+</html>
