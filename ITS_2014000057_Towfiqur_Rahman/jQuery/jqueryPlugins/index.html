@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery Plugin test</title>
+        
+    </head>
+
+    <body>
+
+        <h2>Header 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio quibusdam voluptate ducimus vitae inventore autem fuga blanditiis neque! Assumenda laboriosam porro perspiciatis officia dolorum, officiis, at adipisci quaerat ipsa?</p>
+        <h2>Header 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis optio quibusdam voluptate ducimus vitae inventore autem fuga blanditiis neque! Assumenda laboriosam porro perspiciatis officia dolorum, officiis, at adipisci quaerat ipsa?</p>
+
+    	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    	<script src="js/jquery.hello-world.js"></script>
+
+        <script>
+            $(document).ready( function() {
+                $('h2').helloWorld({
+                    text        : 'Salut, le monde!',
+                    color       : '#005dff',
+                    fontStyle   : 'italic'
+                });
+            });
+        </script>
+
+    </body>
+</html>
