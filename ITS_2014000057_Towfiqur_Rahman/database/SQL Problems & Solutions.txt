@@ -1,0 +1,9 @@
+0 - Get all information of 'Sajia'
+1 - Get final result of sajia
+2 - Get all results of Sajia
+3 - Get the average of all cgpa of sajia
+
+[0] - select * from students where students.id="11"
+[1] - select * from final_results INNER JOIN students on students.id = final_results.student_id where students.id="11"
+[2] - select * from results INNER JOIN students on students.id = results.student_id where students.id = "11"
+[3] - select AVG(gpa) as Average from results INNER JOIN students on students.id = results.student_id where students.id = "11"
