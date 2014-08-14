@@ -1,0 +1,13 @@
+<VirtualHost *:80>
+        ServerName yoursite.com
+        DocumentRoot /var/www/yoursite/public
+
+       <Directory /var/www/yoursite/public>
+          <IfModule mod_rewrite.c>
+          Options -MultiViews
+          RewriteEngine On
+          RewriteCond %{REQUEST_FILENAME} !-f
+         RewriteRule ^ index.php [L]
+       </IfModule>
+</Directory>
+</VirtualHost>
